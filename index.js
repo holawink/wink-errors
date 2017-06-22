@@ -4,14 +4,14 @@
  */
 
 /*
-
+ 
  Forma del código
  w-X-Y-xx
-
+ 
  X: sección
  Y: subsección
  xx: código de error
-
+ 
  ------------------------
  X = 0: generic errors
  Y = 0: generic app errors
@@ -20,12 +20,12 @@
  X = 0: generic errors
  Y = 1: generic server errors
  ------------------------
-
+ 
  X = 1: Autentificación
  Y = 0: Proceso de confirmación y registro de cuenta (signUp)
  Y = 1: Proceso de ingresar a la cuenta (signIn)
  Y = 2: Cambio y recuperación de contraseña
-
+ 
  * */
 
 const internalErrors = {
@@ -59,7 +59,7 @@ const internalErrors = {
         httpStatus: 409,
         message: 'Invalid input'
       },
-      EMAIL_TAKEN: {
+      PHONE_TAKEN: {
         code: 'w-1-1-2',
         httpStatus: 409,
         message: 'Phone taken'
@@ -153,7 +153,7 @@ const internalErrors = {
         message: 'Invalid input'
       },
       EMAIL_TAKEN: {
-        code: 'w-1-5-1',
+        code: 'w-1-5-2',
         httpStatus: 409,
         message: 'Email taken'
       }
@@ -187,14 +187,19 @@ const internalErrors = {
     },
     resendCode: {
       INTERNAL_ERROR: {
-        code: 'w-1-6-0',
+        code: 'w-1-7-0',
         httpStatus: 409,
         message: 'Error sending verification code'
       },
       INVALID_INPUT: {
-        code: 'w-1-6-1',
+        code: 'w-1-7-1',
         httpStatus: 409,
         message: 'Invalid input'
+      },
+      USER_ALREADY_CONFIRMED: {
+        code: 'w-1-7-2',
+        httpStatus: 409,
+        message: 'User already confirmed'
       }
     }
   },
@@ -226,11 +231,11 @@ const internalErrors = {
         message: 'Invalid credentials'
       }
     },
-    refreshToken: {
+    logout: {
       INTERNAL_ERROR: {
         code: 'w-2-1-0',
         httpStatus: 409,
-        message: 'Error refreshing token'
+        message: 'Error logout'
       },
       INVALID_INPUT: {
         code: 'w-2-1-1',
@@ -238,28 +243,23 @@ const internalErrors = {
         message: 'Invalid input'
       }
     },
-    passwordForgot: {
+    refreshToken: {
       INTERNAL_ERROR: {
         code: 'w-2-2-0',
         httpStatus: 409,
-        message: 'Error sending reset password email'
+        message: 'Error refreshing token'
       },
       INVALID_INPUT: {
         code: 'w-2-2-1',
         httpStatus: 409,
         message: 'Invalid input'
-      },
-      USER_NOT_EXIST: {
-        code: 'w-2-2-2',
-        httpStatus: 409,
-        message: 'User does not exist'
       }
     },
-    passwordReset: {
+    passwordForgot: {
       INTERNAL_ERROR: {
         code: 'w-2-3-0',
         httpStatus: 409,
-        message: 'Error resetting password'
+        message: 'Error sending reset password email'
       },
       INVALID_INPUT: {
         code: 'w-2-3-1',
@@ -268,6 +268,35 @@ const internalErrors = {
       },
       USER_NOT_EXIST: {
         code: 'w-2-3-2',
+        httpStatus: 409,
+        message: 'User does not exist'
+      }
+    },
+    passwordChange: {
+      INTERNAL_ERROR: {
+        code: 'w-2-4-0',
+        httpStatus: 409,
+        message: 'Error changing password'
+      },
+      INVALID_INPUT: {
+        code: 'w-2-4-1',
+        httpStatus: 409,
+        message: 'Invalid input'
+      }
+    },
+    passwordReset: {
+      INTERNAL_ERROR: {
+        code: 'w-2-5-0',
+        httpStatus: 409,
+        message: 'Error resetting password'
+      },
+      INVALID_INPUT: {
+        code: 'w-2-5-1',
+        httpStatus: 409,
+        message: 'Invalid input'
+      },
+      USER_NOT_EXIST: {
+        code: 'w-2-5-2',
         httpStatus: 409,
         message: 'User does not exist'
       }

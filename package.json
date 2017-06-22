@@ -1,0 +1,14 @@
+{
+  "name": "myMod",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Wink",
+  "license": "MIT",
+  "dependencies": {},
+  "scripts": {
+    "test": "standard"
+  },
+  "devDependencies": {
+    "standard": "^10.0.2"
+  }
+}

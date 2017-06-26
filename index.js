@@ -1,4 +1,3 @@
-'use strict'
 /*
  WINK_HTTP_CODE|ES_DESCRIPTION
  */
@@ -183,6 +182,11 @@ const internalErrors = {
         code: 'w-1-6-4',
         httpStatus: 409,
         message: 'User already confirmed'
+      },
+      USER_NOT_FOUND: {
+        code: 'w-1-6-5',
+        httpStatus: 409,
+        message: 'User not found'
       }
     },
     resendCode: {
@@ -200,6 +204,11 @@ const internalErrors = {
         code: 'w-1-7-2',
         httpStatus: 409,
         message: 'User already confirmed'
+      },
+      USER_NOT_FOUND: {
+        code: 'w-1-7-3',
+        httpStatus: 409,
+        message: 'User not found'
       }
     }
   },
@@ -241,6 +250,11 @@ const internalErrors = {
         code: 'w-2-1-1',
         httpStatus: 409,
         message: 'Invalid input'
+      },
+      INVALID_CREDENTIALS: {
+        code: 'w-2-1-2',
+        httpStatus: 409,
+        message: 'Not Authorized'
       }
     },
     refreshToken: {
@@ -282,6 +296,11 @@ const internalErrors = {
         code: 'w-2-4-1',
         httpStatus: 409,
         message: 'Invalid input'
+      },
+      INVALID_CREDENTIALS: {
+        code: 'w-2-4-2',
+        httpStatus: 409,
+        message: 'Not Authorized'
       }
     },
     passwordReset: {
@@ -299,6 +318,16 @@ const internalErrors = {
         code: 'w-2-5-2',
         httpStatus: 409,
         message: 'User does not exist'
+      },
+      EXPIRED_VERIFICATION_CODE: {
+        code: 'w-2-5-3',
+        httpStatus: 409,
+        message: 'Verification code expired'
+      },
+      INVALID_VERIFICATION_CODE: {
+        code: 'w-2-5-4',
+        httpStatus: 409,
+        message: 'Invalid verification code'
       }
     }
   }

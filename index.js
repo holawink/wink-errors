@@ -1,4 +1,3 @@
-'use strict'
 /*
  WINK_HTTP_CODE|ES_DESCRIPTION
  */
@@ -446,8 +445,26 @@ function buildErrorResponse (error = {}, description = '') {
   return customError
 }
 
+// ALL 1, 7, 3011, 3034, 3035, 7020-7023, 9022, 9025, 9028, 9029, 9033
+export function getAccountInfoError (errors) {
+  if (errors['3011']) {
+    return internalErrors.localPayments.addAccount.ACCOUNT_NOT_EXIST
+  } else if (errors['3034']) {
+    return internalErrors.localPayments.addAccount.BLOCKED_ACCOUNT
+  } else if (errors['3035']) {
+    return internalErrors.localPayments.addAccount.CLOSED_ACCOUNT
+  } else if (errors['9025'] || errors['9033']) {
+    return internalErrors.localPayments.addAccount.INVALID_ACCOUNT_NUMBER
+  } else {
+    return internalErrors.localPayments.addAccount.INTERNAL_ERROR
+  }
+}
+
 module.exports = {
   external,
   internalErrors,
-  buildErrorResponse
+  buildErrorResponse,
+  translator: {
+    getAccountInfoError
+  }
 }

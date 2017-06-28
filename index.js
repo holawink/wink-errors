@@ -1,3 +1,4 @@
+'use strict'
 /*
  WINK_HTTP_CODE|ES_DESCRIPTION
  */
@@ -5,27 +6,12 @@
 /*
  
  Forma del código
- w-X-Y-xx
+ w-X-Y-A
  
  X: sección
  Y: subsección
- xx: código de error
- 
- ------------------------
- X = 0: generic errors
- Y = 0: generic app errors
- ------------------------
- ------------------------
- X = 0: generic errors
- Y = 1: generic server errors
- ------------------------
- 
- X = 1: Autentificación
- Y = 0: Proceso de confirmación y registro de cuenta (signUp)
- Y = 1: Proceso de ingresar a la cuenta (signIn)
- Y = 2: Cambio y recuperación de contraseña
- 
- * */
+ A: código de error (contador)
+ */
 
 const internalErrors = {
   generic: {},
@@ -33,6 +19,7 @@ const internalErrors = {
     checkEmail: {
       INTERNAL_ERROR: {
         code: 'w-1-0-0',
+        type: 'INTERNAL_ERROR',
         httpStatus: 409,
         message: 'Error looking for email'
       },
@@ -210,6 +197,23 @@ const internalErrors = {
         httpStatus: 409,
         message: 'User not found'
       }
+    },
+    emailConfirmed: {
+      INTERNAL_ERROR: {
+        code: 'w-1-8-0',
+        httpStatus: 409,
+        message: 'Error looking for user status'
+      },
+      INVALID_INPUT: {
+        code: 'w-1-8-1',
+        httpStatus: 409,
+        message: 'Invalid input'
+      },
+      USER_NOT_FOUND: {
+        code: 'w-1-8-2',
+        httpStatus: 409,
+        message: 'User not found'
+      }
     }
   },
   auth: {
@@ -328,6 +332,42 @@ const internalErrors = {
         code: 'w-2-5-4',
         httpStatus: 409,
         message: 'Invalid verification code'
+      }
+    }
+  },
+  // X = 3
+  localPayments: {
+    // Y = 0
+    addAccount: {
+      ACCOUNT_NOT_EXIST: {
+        code: 'w-3-0-0',
+        externalCodes: '3011',
+        httpStatus: 409,
+        message: 'Account not exist'
+      },
+      BLOCKED_ACCOUNT: {
+        code: 'w-3-0-1',
+        externalCodes: '3034',
+        httpStatus: 409,
+        message: 'Blocked account'
+      },
+      CLOSED_ACCOUNT: {
+        code: 'w-3-0-2',
+        externalCodes: '3035',
+        httpStatus: 409,
+        message: 'Closed account'
+      },
+      INVALID_ACCOUNT_NUMBER: {
+        code: 'w-3-0-3',
+        externalCodes: '9025,9033',
+        httpStatus: 409,
+        message: 'Invalid account number'
+      },
+      EXTERNAL_BANK_NOT_RESPOND: {
+        code: 'w-3-0-3',
+        externalCodes: '9029',
+        httpStatus: 409,
+        message: 'External bank does not respond'
       }
     }
   }

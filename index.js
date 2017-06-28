@@ -339,35 +339,34 @@ const internalErrors = {
   localPayments: {
     // Y = 0
     addAccount: {
-      ACCOUNT_NOT_EXIST: {
+      INTERNAL_ERROR: {
         code: 'w-3-0-0',
+        httpStatus: 409,
+        message: 'Error checking bank account'
+      },
+      ACCOUNT_NOT_EXIST: {
+        code: 'w-3-0-1',
         externalCodes: '3011',
         httpStatus: 409,
         message: 'Account not exist'
       },
       BLOCKED_ACCOUNT: {
-        code: 'w-3-0-1',
+        code: 'w-3-0-2',
         externalCodes: '3034',
         httpStatus: 409,
         message: 'Blocked account'
       },
       CLOSED_ACCOUNT: {
-        code: 'w-3-0-2',
+        code: 'w-3-0-3',
         externalCodes: '3035',
         httpStatus: 409,
         message: 'Closed account'
       },
       INVALID_ACCOUNT_NUMBER: {
-        code: 'w-3-0-3',
+        code: 'w-3-0-4',
         externalCodes: '9025,9033',
         httpStatus: 409,
         message: 'Invalid account number'
-      },
-      EXTERNAL_BANK_NOT_RESPOND: {
-        code: 'w-3-0-3',
-        externalCodes: '9029',
-        httpStatus: 409,
-        message: 'External bank does not respond'
       }
     }
   }

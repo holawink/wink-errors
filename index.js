@@ -112,6 +112,11 @@ const internalErrors = {
         code: 'w-1-3-7',
         httpStatus: 409,
         message: 'Invalid lastName'
+      },
+      ID_NUMBER_TAKEN : {
+        code: 'w-1-3-8',
+        httpStatus: 409,
+        message: 'Identification number taken'
       }
     },
     uploadProfile: {
@@ -212,6 +217,14 @@ const internalErrors = {
         code: 'w-1-8-2',
         httpStatus: 409,
         message: 'User not found'
+      }
+    },
+    createProfile: {
+      INTERNAL_ERROR: {
+        code: 'w-1-9-0',
+        type: 'INTERNAL_ERROR',
+        httpStatus: 409,
+        message: 'Error creating user profile'
       }
     }
   },
@@ -366,6 +379,16 @@ const internalErrors = {
         externalCodes: '9025,9033',
         httpStatus: 409,
         message: 'Invalid account number'
+      },
+      USER_NOT_FOUND: {
+        code: 'w-3-0-5',
+        httpStatus: 409,
+        message: 'User not found'
+      },
+      UPDATE_ACCOUNT: {
+        code: 'w-3-0-6',
+        httpStatus: 409,
+        message: 'Error updating own accounts'
       }
     }
   }

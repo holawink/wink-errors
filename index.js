@@ -17,7 +17,7 @@ const internalErrors = {
   signUp: {
     checkEmail: {
       INTERNAL_ERROR: {
-        code: 'w-1-0-0',
+        code: 'w-1-0-1',
         type: 'INTERNAL_ERROR',
         httpStatus: 409,
         message: 'Error looking for email'

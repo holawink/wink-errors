@@ -483,11 +483,15 @@ function getAccountInfoError (errors) {
   }
 }
 
+function getSendDebitTransferError(errors) {
+}
+
 module.exports = {
   external,
   internalErrors,
   buildErrorResponse,
   translator: {
-    getAccountInfoError
+    getAccountInfoError,
+    getSendDebitTransferError
   }
 }

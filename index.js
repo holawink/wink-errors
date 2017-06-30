@@ -3,10 +3,10 @@
  */
 
 /*
- 
+
  Forma del código
  w-X-Y-A
- 
+
  X: sección
  Y: subsección
  A: código de error (contador)
@@ -469,7 +469,7 @@ function buildErrorResponse (error = {}, description = '') {
 }
 
 // ALL 1, 7, 3011, 3034, 3035, 7020-7023, 9022, 9025, 9028, 9029, 9033
-export function getAccountInfoError (errors) {
+function getAccountInfoError (errors) {
   if (errors['3011']) {
     return internalErrors.localPayments.addAccount.ACCOUNT_NOT_EXIST
   } else if (errors['3034']) {

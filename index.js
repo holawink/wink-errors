@@ -3,10 +3,10 @@
  */
 
 /*
-
+ 
  Forma del código
  w-X-Y-A
-
+ 
  X: sección
  Y: subsección
  A: código de error (contador)
@@ -17,7 +17,7 @@ const internalErrors = {
   signUp: {
     checkEmail: {
       INTERNAL_ERROR: {
-        code: 'w-1-0-0',
+        code: 'w-1-0-1',
         type: 'INTERNAL_ERROR',
         httpStatus: 409,
         message: 'Error looking for email'
@@ -380,15 +380,71 @@ const internalErrors = {
         httpStatus: 409,
         message: 'Invalid account number'
       },
-      USER_NOT_FOUND: {
+      ALREADY_SAVED: {
         code: 'w-3-0-5',
+        externalCodes: '',
+        httpStatus: 409,
+        message: 'Account already saved'
+      }
+    },
+    reloadMoney: {
+      INTERNAL_ERROR: {
+        code: 'w-3-1-0',
+        httpStatus: 409,
+        message: 'Error reloading money'
+      },
+      INVALID_INPUT: {
+        code: 'w-3-1-1',
+        httpStatus: 409,
+        message: 'Invalid Input'
+      },
+      INVALID_ORIGIN_ACCOUNT: {
+        code: 'w-3-1-2',
+        httpStatus: 409,
+        message: 'Invalid deposit account '
+      },
+      INVALID_DESTINATION_ACCOUNT: {
+        code: 'w-3-1-3',
+        httpStatus: 409,
+        message: 'Invalid source account'
+      },
+      INVALID_PIN: {
+        code: 'w-3-1-4',
+        httpStatus: 409,
+        message: 'Invalid pin'
+      }
+    }
+  },
+  coreBase: {
+    createCustomer: {
+      INTERNAL_ERROR: {
+        code: 'w-4-0-0',
+        httpStatus: 409,
+        message: 'Error creating core bank account'
+      },
+      INVALID_INPUT: {
+        code: 'w-4-0-1',
+        httpStatus: 409,
+        message: 'Invalid input'
+      }
+    }
+  },
+  account: {
+    externalAccounts: {
+      INTERNAL_ERROR: {
+        code: 'w-5-0-0',
+        httpStatus: 409,
+        message: 'Error getting esternal accounts'
+      },
+      INVALID_INPUT: {
+        code: 'w-5-0-1',
+        httpStatus: 409,
+        message: 'Invalid input'
+      },
+      USER_NOT_FOUND: {
+        code: 'w-5-0-2',
         httpStatus: 409,
         message: 'User not found'
-      },
-      UPDATE_ACCOUNT: {
-        code: 'w-3-0-6',
-        httpStatus: 409,
-        message: 'Error updating own accounts'
       }
     }
   }
@@ -483,11 +539,21 @@ function getAccountInfoError (errors) {
   }
 }
 
+// TODO: implement
+function getSendDebitTransferError(errors) {
+}
+
+// TODO: implement
+function getSendTransferError(errors) {
+}
+
 module.exports = {
   external,
   internalErrors,
   buildErrorResponse,
   translator: {
-    getAccountInfoError
+    getAccountInfoError,
+    getSendDebitTransferError,
+    getSendTransferError
   }
 }

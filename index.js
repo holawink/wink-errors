@@ -401,7 +401,7 @@ const internalErrors = {
       INVALID_ORIGIN_ACCOUNT: {
         code: 'w-3-1-2',
         httpStatus: 409,
-        message: 'Invalid deposit account '
+        message: 'Invalid deposit account'
       },
       INVALID_DESTINATION_ACCOUNT: {
         code: 'w-3-1-3',
@@ -434,7 +434,7 @@ const internalErrors = {
       INTERNAL_ERROR: {
         code: 'w-5-0-0',
         httpStatus: 409,
-        message: 'Error getting esternal accounts'
+        message: 'Error getting external accounts'
       },
       INVALID_INPUT: {
         code: 'w-5-0-1',
@@ -445,6 +445,38 @@ const internalErrors = {
         code: 'w-5-0-2',
         httpStatus: 409,
         message: 'User not found'
+      }
+    },
+    sendMoneyInternal: {
+      INTERNAL_ERROR: {
+        code: 'w-5-1-0',
+        httpStatus: 409,
+        message: 'Error getting external accounts'
+      },
+      INVALID_INPUT: {
+        code: 'w-5-1-1',
+        httpStatus: 409,
+        message: 'Invalid Input'
+      },
+      INVALID_PIN: {
+        code: 'w-5-1-2',
+        httpStatus: 409,
+        message: 'Invalid pin'
+      },
+      INVALID_DESTINATION_ACCOUNT: {
+        code: 'w-5-1-3',
+        httpStatus: 409,
+        message: 'Invalid destination account'
+      },
+      SAME_ORIGIN_DESTINATION: {
+        code: 'w-5-1-4',
+        httpStatus: 409,
+        message: 'Invalid destination account'
+      },
+      INSUFFICIENT_FUNDS: {
+        code: 'w-5-1-5',
+        httpStatus: 409,
+        message: 'Error insufficient funds'
       }
     }
   }

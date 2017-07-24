@@ -113,7 +113,7 @@ const internalErrors = {
         httpStatus: 409,
         message: 'Invalid lastName'
       },
-      ID_NUMBER_TAKEN : {
+      ID_NUMBER_TAKEN: {
         code: 'w-1-3-8',
         httpStatus: 409,
         message: 'Identification number taken'
@@ -225,6 +225,20 @@ const internalErrors = {
         type: 'INTERNAL_ERROR',
         httpStatus: 409,
         message: 'Error creating user profile'
+      }
+    },
+    definePin: {
+      INTERNAL_ERROR: {
+        code: 'w-1-10-0',
+        type: 'INTERNAL_ERROR',
+        httpStatus: 409,
+        message: 'Error setting user pin'
+      },
+      INVALID_PIN_LENGTH: {
+        code: 'w-1-10-1',
+        type: 'INVALID_PIN_LENGTH',
+        httpStatus: 409,
+        message: 'Error invalid pin length'
       }
     }
   },
@@ -451,7 +465,7 @@ const internalErrors = {
       INTERNAL_ERROR: {
         code: 'w-5-1-0',
         httpStatus: 409,
-        message: 'Error getting external accounts'
+        message: 'Error sending money internal accounts'
       },
       INVALID_INPUT: {
         code: 'w-5-1-1',
@@ -477,6 +491,38 @@ const internalErrors = {
         code: 'w-5-1-5',
         httpStatus: 409,
         message: 'Error insufficient funds'
+      }
+    },
+    sendMoneyExternal: {
+      INTERNAL_ERROR: {
+        code: 'w-5-2-0',
+        httpStatus: 409,
+        message: 'Error sending money external accounts'
+      },
+      INVALID_INPUT: {
+        code: 'w-5-2-1',
+        httpStatus: 409,
+        message: 'Invalid Input'
+      },
+      NOTIFICATION_ERROR_EMAIL: {
+        code: 'w-5-2-3',
+        httpStatus: 409,
+        message: 'Error sending notification'
+      },
+      INVALID_PIN: {
+        code: 'w-5-2-4',
+        httpStatus: 409,
+        message: 'Invalid pin'
+      },
+      INSUFFICIENT_FUNDS: {
+        code: 'w-5-2-5',
+        httpStatus: 409,
+        message: 'Error insufficient funds'
+      },
+      INVALID_DESTINATION_ACCOUNT: {
+        code: 'w-5-2-6',
+        httpStatus: 409,
+        message: 'Invalid destination account'
       }
     }
   }
@@ -572,11 +618,11 @@ function getAccountInfoError (errors) {
 }
 
 // TODO: implement
-function getSendDebitTransferError(errors) {
+function getSendDebitTransferError (errors) {
 }
 
 // TODO: implement
-function getSendTransferError(errors) {
+function getSendTransferError (errors) {
 }
 
 module.exports = {

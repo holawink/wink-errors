@@ -525,6 +525,25 @@ const internalErrors = {
         message: 'Invalid destination account'
       }
     }
+  },
+  servicePayments: {
+    payService: {
+      INTERNAL_ERROR: {
+        code: 'w-6-1-0',
+        httpStatus: 409,
+        message: 'Error paying service'
+      },
+      INVALID_INPUT: {
+        code: 'w-6-1-1',
+        httpStatus: 409,
+        message: 'Invalid Input'
+      },
+      INVALID_PIN: {
+        code: 'w-6-1-2',
+        httpStatus: 409,
+        message: 'Invalid pin'
+      }
+    }
   }
 }
 

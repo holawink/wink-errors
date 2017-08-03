@@ -549,6 +549,92 @@ const internalErrors = {
         message: 'Error insufficient funds'
       }
     }
+  },
+  envelopes: {
+    createEnvelopeBudget: {
+      INTERNAL_ERROR: {
+        code: 'w-7-0-0',
+        httpStatus: 409,
+        message: 'Error creating envelope budget'
+      },
+      INVALID_INPUT: {
+        code: 'w-7-0-1',
+        httpStatus: 409,
+        message: 'Invalid Input'
+      }
+    },
+    createEnvelopeSavings: {
+      INTERNAL_ERROR: {
+        code: 'w-7-1-0',
+        httpStatus: 409,
+        message: 'Error creating envelope saving'
+      },
+      INVALID_INPUT: {
+        code: 'w-7-1-1',
+        httpStatus: 409,
+        message: 'Invalid Input'
+      }
+    },
+    deleteEnvelope: {
+      INTERNAL_ERROR: {
+        code: 'w-7-2-0',
+        httpStatus: 409,
+        message: 'Error deleting envelope'
+      },
+      INVALID_INPUT: {
+        code: 'w-7-2-1',
+        httpStatus: 409,
+        message: 'Invalid Input'
+      }
+    },
+    changeNameEnvelope: {
+      INTERNAL_ERROR: {
+        code: 'w-7-3-0',
+        httpStatus: 409,
+        message: 'Error changing envelope name'
+      },
+      INVALID_INPUT: {
+        code: 'w-7-3-1',
+        httpStatus: 409,
+        message: 'Invalid Input'
+      }
+    },
+    addFundsEnvelope: {
+      INTERNAL_ERROR: {
+        code: 'w-7-4-0',
+        httpStatus: 409,
+        message: 'Error adding envelope funds'
+      },
+      INVALID_INPUT: {
+        code: 'w-7-4-1',
+        httpStatus: 409,
+        message: 'Invalid Input'
+      }
+    },
+    transferFundsToCard: {
+      INTERNAL_ERROR: {
+        code: 'w-7-5-0',
+        httpStatus: 409,
+        message: 'Error transferring envelope funds'
+      },
+      INVALID_INPUT: {
+        code: 'w-7-5-1',
+        httpStatus: 409,
+        message: 'Invalid Input'
+      }
+    },
+    getEnvelopes: {
+      INTERNAL_ERROR: {
+        code: 'w-7-5-0',
+        httpStatus: 409,
+        message: 'Error getting envelopes'
+      },
+      INVALID_INPUT: {
+        code: 'w-7-5-1',
+        httpStatus: 409,
+        message: 'Invalid Input'
+      }
+    }
   }
 }
 

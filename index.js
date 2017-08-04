@@ -578,6 +578,11 @@ const internalErrors = {
         code: 'w-7-1-1',
         httpStatus: 409,
         message: 'Invalid Input'
+      },
+      INSUFFICIENT_FUNDS: {
+        code: 'w-7-1-2',
+        httpStatus: 409,
+        message: 'Error insufficient funds'
       }
     },
     deleteEnvelope: {
@@ -614,6 +619,11 @@ const internalErrors = {
         code: 'w-7-4-1',
         httpStatus: 409,
         message: 'Invalid Input'
+      },
+      INSUFFICIENT_FUNDS: {
+        code: 'w-7-4-2',
+        httpStatus: 409,
+        message: 'Error insufficient funds'
       }
     },
     transferFundsToCard: {

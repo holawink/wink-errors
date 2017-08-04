@@ -561,6 +561,11 @@ const internalErrors = {
         code: 'w-7-0-1',
         httpStatus: 409,
         message: 'Invalid Input'
+      },
+      INSUFFICIENT_FUNDS: {
+        code: 'w-7-0-2',
+        httpStatus: 409,
+        message: 'Error insufficient funds'
       }
     },
     createEnvelopeSavings: {

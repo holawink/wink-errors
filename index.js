@@ -663,6 +663,18 @@ const internalErrors = {
         httpStatus: 409,
         message: 'Invalid Input'
       }
+    },
+    list: {
+      INTERNAL_ERROR: {
+        code: 'w-8-1-0',
+        httpStatus: 409,
+        message: 'Error listing request money'
+      },
+      INVALID_INPUT: {
+        code: 'w-8-1-1',
+        httpStatus: 409,
+        message: 'Invalid Input'
+      }
     }
   }
 }

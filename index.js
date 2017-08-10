@@ -650,6 +650,20 @@ const internalErrors = {
         message: 'Invalid Input'
       }
     }
+  },
+  requestMoney: {
+    create: {
+      INTERNAL_ERROR: {
+        code: 'w-8-0-0',
+        httpStatus: 409,
+        message: 'Error creating request money'
+      },
+      INVALID_INPUT: {
+        code: 'w-8-0-1',
+        httpStatus: 409,
+        message: 'Invalid Input'
+      }
+    }
   }
 }
 

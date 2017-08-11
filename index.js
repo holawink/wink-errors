@@ -676,11 +676,11 @@ const internalErrors = {
         message: 'Invalid Input'
       }
     },
-    cancel: {
+    reject: {
       INTERNAL_ERROR: {
         code: 'w-8-2-0',
         httpStatus: 409,
-        message: 'Error canceling request money'
+        message: 'Error rejecting request money'
       },
       INVALID_INPUT: {
         code: 'w-8-2-1',

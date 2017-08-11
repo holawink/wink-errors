@@ -675,7 +675,31 @@ const internalErrors = {
         httpStatus: 409,
         message: 'Invalid Input'
       }
-    }
+    },
+    cancel: {
+      INTERNAL_ERROR: {
+        code: 'w-8-2-0',
+        httpStatus: 409,
+        message: 'Error canceling request money'
+      },
+      INVALID_INPUT: {
+        code: 'w-8-2-1',
+        httpStatus: 409,
+        message: 'Invalid Input'
+      }
+    },
+    apply: {
+      INTERNAL_ERROR: {
+        code: 'w-8-3-0',
+        httpStatus: 409,
+        message: 'Error applying request money'
+      },
+      INVALID_INPUT: {
+        code: 'w-8-3-1',
+        httpStatus: 409,
+        message: 'Invalid Input'
+      }
+    },
   }
 }
 

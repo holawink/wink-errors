@@ -703,6 +703,11 @@ const internalErrors = {
         code: 'w-8-3-2',
         httpStatus: 409,
         message: 'Invalid pin'
+      },
+      INSUFFICIENT_FUNDS: {
+        code: 'w-8-3-3',
+        httpStatus: 409,
+        message: 'Error insufficient funds'
       }
     },
   }

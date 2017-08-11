@@ -698,6 +698,11 @@ const internalErrors = {
         code: 'w-8-3-1',
         httpStatus: 409,
         message: 'Invalid Input'
+      },
+      INVALID_PIN: {
+        code: 'w-8-3-2',
+        httpStatus: 409,
+        message: 'Invalid pin'
       }
     },
   }

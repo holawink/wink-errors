@@ -12,6 +12,21 @@
  A: código de error (contador)
  */
 
+const errors = {
+  account: {},
+  envelopes: {},
+  profile: {},
+  reloadMoney: {},
+  requestMoney: {},
+  sendMoney: {
+    createLink: {
+      code: 'w-1-0-1',
+      
+    }
+  },
+  servicePayments: {}
+}
+
 const internalErrors = {
   generic: {},
   signUp: {

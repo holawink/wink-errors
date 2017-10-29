@@ -29,9 +29,15 @@ const errorCodes = {
       }
     },
     confirmPhone: {
-      unexpectedError: {
-        code: 'security-2-2',
-        message: 'Unexpected error'
+      invalidCode: {
+        code: 'security-2-1',
+        message: 'Invalid code'
+      }
+    },
+    checkIdentity: {
+      errorMatch: {
+        code: 'security-3-1',
+        message: 'Identity does not match with your id'
       }
     }
   }
@@ -41,7 +47,7 @@ const buildErrorResponse = (error = {}, description = '') => {
   let customError = new Error()
   customError.message = error.message || 'Unexpected error'
   customError.httpStatus = error.httpStatus || 409
-  customError.code = error.code || 'general-0-0-0'
+  customError.code = error.code || 'general-0-1'
   customError.description = description
   return customError
 }

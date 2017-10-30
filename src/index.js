@@ -82,6 +82,10 @@ const errorCodes = {
       clientAlreadyConfirmed: {
         code: 'security-6-2',
         message: 'Client already confirm'
+      },
+      notPendingConfirmation: {
+        code: 'security-6-3',
+        message: 'Not pending confirmation'
       }
     }
   }

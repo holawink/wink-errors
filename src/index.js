@@ -75,9 +75,7 @@ const errorCodes = {
         code: 'security-5-2',
         message: 'Some unique attributes taken: username, id document, phone'
       }
-    }
-  },
-  email: {
+    },
     resendConfirmationEmail: {
       clientNotFound: {
         code: 'security-6-1',
@@ -91,8 +89,27 @@ const errorCodes = {
         code: 'security-6-3',
         message: 'Not pending confirmation'
       }
+    },
+    confirmEmail: {
+      clientNotFound: {
+        code: 'security-7-1',
+        message: 'Client not found'
+      },
+      clientAlreadyConfirmed: {
+        code: 'security-7-2',
+        message: 'Client already confirm'
+      },
+      notPendingConfirmation: {
+        code: 'security-7-3',
+        message: 'Not pending confirmation'
+      },
+      invalidCode: {
+        code: 'security-7-4',
+        message: 'Invalid confirmation code'
+      }
     }
-  }
+  },
+  email: {}
 }
 
 const buildErrorResponse = (error = {}, description = '') => {

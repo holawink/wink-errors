@@ -106,6 +106,10 @@ const errorCodes = {
       invalidCode: {
         code: 'security-7-4',
         message: 'Invalid confirmation code'
+      },
+      pendingKYC: {
+        code: 'security-7-5',
+        message: 'Pending KYC, please contact online support'
       }
     }
   },

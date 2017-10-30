@@ -74,7 +74,16 @@ const errorCodes = {
     }
   },
   email: {
-    send: {}
+    resendConfirmationEmail: {
+      clientNotFound: {
+        code: 'security-6-1',
+        message: 'Client not found'
+      },
+      clientAlreadyConfirmed: {
+        code: 'security-6-2',
+        message: 'Client already confirm'
+      }
+    }
   }
 }
 

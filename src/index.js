@@ -70,6 +70,10 @@ const errorCodes = {
       invalidProfileToken: {
         code: 'security-5-1',
         message: 'Invalid profile token'
+      },
+      clientTaken: {
+        code: 'security-5-2',
+        message: 'Some unique attributes taken: username, id document, phone'
       }
     }
   },

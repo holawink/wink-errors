@@ -111,9 +111,18 @@ const errorCodes = {
         code: 'security-7-5',
         message: 'Pending KYC, please contact online support'
       }
+    },
+    login: {
+      clientNotFound: {
+        code: 'security-8-1',
+        message: 'Client not found'
+      },
+      invalidPassword: {
+        code: 'security-8-2',
+        message: 'Invalid password'
+      }
     }
-  },
-  email: {}
+  }
 }
 
 const buildErrorResponse = (error = {}, description = '') => {

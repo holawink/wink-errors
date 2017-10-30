@@ -120,6 +120,14 @@ const errorCodes = {
       invalidPassword: {
         code: 'security-8-2',
         message: 'Invalid password'
+      },
+      clientNotConfirmed: {
+        code: 'security-8-3',
+        message: 'Pending email confirmation'
+      },
+      invalidClientStatus: {
+        code: 'security-8-4',
+        message: 'Invalid client status'
       }
     }
   }

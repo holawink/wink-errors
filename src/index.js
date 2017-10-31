@@ -129,6 +129,12 @@ const errorCodes = {
         code: 'security-8-4',
         message: 'Invalid client status'
       }
+    },
+    isEmailVerified: {
+      clientNotFound: {
+        code: 'security-9-1',
+        message: 'Client not found'
+      }
     }
   }
 }

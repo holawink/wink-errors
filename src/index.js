@@ -139,6 +139,12 @@ const errorCodes = {
         code: 'security-9-1',
         message: 'Client not found'
       }
+    },
+    logout: {
+      invalidCredentials :{
+        code: 'security-10-1',
+        message: 'Invalid credentials'
+      }
     }
   }
 }

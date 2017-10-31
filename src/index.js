@@ -128,7 +128,11 @@ const errorCodes = {
       invalidClientStatus: {
         code: 'security-8-4',
         message: 'Invalid client status'
-      }
+      },
+      pendingChangePassword: {
+        code: 'security-8-5',
+        message: 'Client has pending change password'
+      },
     },
     isEmailVerified: {
       clientNotFound: {

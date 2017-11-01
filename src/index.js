@@ -141,9 +141,29 @@ const errorCodes = {
       }
     },
     logout: {
-      invalidCredentials :{
+      invalidCredentials: {
         code: 'security-10-1',
         message: 'Invalid credentials'
+      }
+    },
+    forgotPassword: {
+      clientNotFound: {
+        code: 'security-11-1',
+        message: 'Client not found'
+      },
+      invalidClientStatus: {
+        code: 'security-11-2',
+        message: 'Invalid client status'
+      }
+    },
+    changePassword: {
+      clientNotFound: {
+        code: 'security-12-1',
+        message: 'Client not found'
+      },
+      invalidClientStatus: {
+        code: 'security-12-2',
+        message: 'Invalid client status'
       }
     }
   }

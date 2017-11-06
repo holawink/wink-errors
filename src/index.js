@@ -133,6 +133,10 @@ const errorCodes = {
         code: 'security-8-5',
         message: 'Client has pending change password'
       },
+      invalidDevice: {
+        code: 'security-8-6',
+        message: 'Invalid device'
+      },
     },
     isEmailVerified: {
       clientNotFound: {

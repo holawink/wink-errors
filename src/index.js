@@ -133,8 +133,12 @@ const errorCodes = {
         code: 'security-8-5',
         message: 'Client has pending change password'
       },
-      invalidDevice: {
+      deviceNotSet: {
         code: 'security-8-6',
+        message: 'Device not set'
+      },
+      invalidDevice: {
+        code: 'security-8-7',
         message: 'Invalid device'
       },
     },

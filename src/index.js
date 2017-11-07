@@ -198,6 +198,20 @@ const errorCodes = {
         message: 'Email taken'
       }
     }
+  },
+  cards: {
+    requestTravel: {},
+    list: {},
+    activate: {
+      cardNotBelong: {
+        code: 'cards-2-1',
+        message: 'The card does not belong to the customer'
+      }
+    },
+    block: {},
+    unblock: {},
+    cancel: {},
+    requestReplacement: {}
   }
 }
 

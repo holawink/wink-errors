@@ -173,6 +173,30 @@ const errorCodes = {
         code: 'security-12-2',
         message: 'Invalid client status'
       }
+    },
+    changeEmail: {
+      clientNotFound: {
+        code: 'security-13-1',
+        message: 'Client not found'
+      },
+      invalidClientStatus: {
+        code: 'security-13-2',
+        message: 'Invalid client status'
+      }
+    },
+    changePhone: {
+      clientNotFound: {
+        code: 'security-14-1',
+        message: 'Client not found'
+      },
+      invalidClientStatus: {
+        code: 'security-14-2',
+        message: 'Invalid client status'
+      },
+      emailTaken: {
+        code: 'security-14-3',
+        message: 'Email taken'
+      }
     }
   }
 }

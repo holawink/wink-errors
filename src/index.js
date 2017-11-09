@@ -8,6 +8,10 @@ const errorCodes = {
       invalidInput: {
         code: 'general-0-2',
         message: 'Invalid input'
+      },
+      clientNotFound: {
+        code: 'general-0-3',
+        message: 'Client not found'
       }
     }
   },
@@ -77,10 +81,6 @@ const errorCodes = {
       }
     },
     resendConfirmationEmail: {
-      clientNotFound: {
-        code: 'security-6-1',
-        message: 'Client not found'
-      },
       clientAlreadyConfirmed: {
         code: 'security-6-2',
         message: 'Client already confirm'
@@ -91,10 +91,6 @@ const errorCodes = {
       }
     },
     confirmEmail: {
-      clientNotFound: {
-        code: 'security-7-1',
-        message: 'Client not found'
-      },
       clientAlreadyConfirmed: {
         code: 'security-7-2',
         message: 'Client already confirm'
@@ -113,10 +109,6 @@ const errorCodes = {
       }
     },
     login: {
-      clientNotFound: {
-        code: 'security-8-1',
-        message: 'Client not found'
-      },
       invalidPassword: {
         code: 'security-8-2',
         message: 'Invalid password'
@@ -142,12 +134,7 @@ const errorCodes = {
         message: 'Invalid device'
       },
     },
-    isEmailVerified: {
-      clientNotFound: {
-        code: 'security-9-1',
-        message: 'Client not found'
-      }
-    },
+    isEmailVerified: {},
     logout: {
       invalidCredentials: {
         code: 'security-10-1',
@@ -155,40 +142,24 @@ const errorCodes = {
       }
     },
     forgotPassword: {
-      clientNotFound: {
-        code: 'security-11-1',
-        message: 'Client not found'
-      },
       invalidClientStatus: {
         code: 'security-11-2',
         message: 'Invalid client status'
       }
     },
     changePassword: {
-      clientNotFound: {
-        code: 'security-12-1',
-        message: 'Client not found'
-      },
       invalidClientStatus: {
         code: 'security-12-2',
         message: 'Invalid client status'
       }
     },
     changeEmail: {
-      clientNotFound: {
-        code: 'security-13-1',
-        message: 'Client not found'
-      },
       invalidClientStatus: {
         code: 'security-13-2',
         message: 'Invalid client status'
       }
     },
     changePhone: {
-      clientNotFound: {
-        code: 'security-14-1',
-        message: 'Client not found'
-      },
       invalidClientStatus: {
         code: 'security-14-2',
         message: 'Invalid client status'
@@ -200,18 +171,23 @@ const errorCodes = {
     }
   },
   cards: {
-    requestTravel: {},
-    list: {},
-    activate: {
+    general: {
       cardNotBelong: {
-        code: 'cards-2-1',
+        code: 'cards-0-1',
         message: 'The card does not belong to the customer'
       }
     },
+    requestTravel: {},
+    list: {},
+    activate: {},
     block: {},
     unblock: {},
     cancel: {},
     requestReplacement: {}
+  },
+  profile: {
+    general: {},
+    definePin: {}
   }
 }
 
@@ -224,7 +200,7 @@ const buildErrorResponse = (error = {}, description = '') => {
   return customError
 }
 
-export {
+module.exports = {
   buildErrorResponse,
   errorCodes
 }

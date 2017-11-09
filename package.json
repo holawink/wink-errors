@@ -23,8 +23,10 @@
     "serverless-webpack": "^3.1.0",
     "should": "^11.2.1",
     "sinon": "^3.2.1",
+    "sort-object-keys": "^1.1.2",
     "webpack": "^3.3.0",
-    "webpack-node-externals": "^1.6.0"
+    "webpack-node-externals": "^1.6.0",
+    "write-json-file": "^2.3.0"
   },
   "dependencies": {
     "babel-runtime": "^6.26.0"

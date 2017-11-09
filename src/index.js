@@ -82,55 +82,55 @@ const errorCodes = {
     },
     resendConfirmationEmail: {
       clientAlreadyConfirmed: {
-        code: 'security-6-2',
+        code: 'security-6-1',
         message: 'Client already confirm'
       },
       notPendingConfirmation: {
-        code: 'security-6-3',
+        code: 'security-6-2',
         message: 'Not pending confirmation'
       }
     },
     confirmEmail: {
       clientAlreadyConfirmed: {
-        code: 'security-7-2',
+        code: 'security-7-1',
         message: 'Client already confirm'
       },
       notPendingConfirmation: {
-        code: 'security-7-3',
+        code: 'security-7-2',
         message: 'Not pending confirmation'
       },
       invalidCode: {
-        code: 'security-7-4',
+        code: 'security-7-3',
         message: 'Invalid confirmation code'
       },
       pendingKYC: {
-        code: 'security-7-5',
+        code: 'security-7-4',
         message: 'Pending KYC, please contact online support'
       }
     },
     login: {
       invalidPassword: {
-        code: 'security-8-2',
+        code: 'security-8-1',
         message: 'Invalid password'
       },
       clientNotConfirmed: {
-        code: 'security-8-3',
+        code: 'security-8-2',
         message: 'Pending email confirmation'
       },
       invalidClientStatus: {
-        code: 'security-8-4',
+        code: 'security-8-3',
         message: 'Invalid client status'
       },
       pendingChangePassword: {
-        code: 'security-8-5',
+        code: 'security-8-4',
         message: 'Client has pending change password'
       },
       deviceNotSet: {
-        code: 'security-8-6',
+        code: 'security-8-5',
         message: 'Device not set'
       },
       invalidDevice: {
-        code: 'security-8-7',
+        code: 'security-8-6',
         message: 'Invalid device'
       },
     },
@@ -143,29 +143,29 @@ const errorCodes = {
     },
     forgotPassword: {
       invalidClientStatus: {
-        code: 'security-11-2',
+        code: 'security-11-1',
         message: 'Invalid client status'
       }
     },
     changePassword: {
       invalidClientStatus: {
-        code: 'security-12-2',
+        code: 'security-12-1',
         message: 'Invalid client status'
       }
     },
     changeEmail: {
       invalidClientStatus: {
-        code: 'security-13-2',
+        code: 'security-13-1',
         message: 'Invalid client status'
       }
     },
     changePhone: {
       invalidClientStatus: {
-        code: 'security-14-2',
+        code: 'security-14-1',
         message: 'Invalid client status'
       },
       emailTaken: {
-        code: 'security-14-3',
+        code: 'security-14-2',
         message: 'Email taken'
       }
     }
@@ -186,8 +186,20 @@ const errorCodes = {
     requestReplacement: {}
   },
   profile: {
-    general: {},
-    definePin: {}
+    general: {
+    },
+    definePin: {
+      pinHasBeenDefined: {
+        code: 'profile-1-1',
+        message: 'Client has a pin'
+      }
+    },
+    redefinePin: {
+      invalidPin: {
+        code: 'profile-2-1',
+        message: 'Current pin does not match'
+      }
+    }
   }
 }
 

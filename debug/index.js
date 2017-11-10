@@ -34,6 +34,6 @@ const parseErrors = ({errorCodes}) => {
 const {errorCodes} = require('./../src/index')
 
 const errors = sortObject(parseErrors({errorCodes}))
-writeJsonFile('errors.json', errors).then(() => {
+writeJsonFile('dist/errors.json', errors).then(() => {
   console.log('done')
 })

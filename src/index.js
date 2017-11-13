@@ -168,6 +168,12 @@ const errorCodes = {
         code: 'security-14-2',
         message: 'Email taken'
       }
+    },
+    requestChangeEmail: {
+      sameEmail: {
+        code: 'security-15-1',
+        message: 'Use a different email'
+      }
     }
   },
   cards: {
@@ -186,8 +192,7 @@ const errorCodes = {
     requestReplacement: {}
   },
   profile: {
-    general: {
-    },
+    general: {},
     definePin: {
       pinHasBeenDefined: {
         code: 'profile-1-1',

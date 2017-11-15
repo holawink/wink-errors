@@ -161,14 +161,20 @@ const errorCodes = {
     },
     changePhone: {
       notValidPendingRequest: {
-        code: 'security-13-1',
-        message: 'Invalid request for pending change email '
+        code: 'security-14-1',
+        message: 'Invalid request for pending change phone '
       }
     },
     requestChangeEmail: {
       sameEmail: {
         code: 'security-15-1',
         message: 'Use a different email'
+      }
+    },
+    requestChangePhone: {
+      samePhone: {
+        code: 'security-16-1',
+        message: 'Use a different phone'
       }
     }
   },

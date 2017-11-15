@@ -44,16 +44,20 @@
 		"message": "Invalid client status"
 	},
 	"security-13-1": {
-		"key": "security.changeEmail.invalidClientStatus",
-		"message": "Invalid client status"
+		"key": "security.changeEmail.notValidPendingRequest",
+		"message": "Invalid request for pending change email "
 	},
 	"security-14-1": {
-		"key": "security.changePhone.invalidClientStatus",
-		"message": "Invalid client status"
+		"key": "security.changePhone.notValidPendingRequest",
+		"message": "Invalid request for pending change phone "
 	},
-	"security-14-2": {
-		"key": "security.changePhone.emailTaken",
-		"message": "Email taken"
+	"security-15-1": {
+		"key": "security.requestChangeEmail.sameEmail",
+		"message": "Use a different email"
+	},
+	"security-16-1": {
+		"key": "security.requestChangePhone.samePhone",
+		"message": "Use a different phone"
 	},
 	"security-2-1": {
 		"key": "security.confirmPhone.invalidCode",

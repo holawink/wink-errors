@@ -154,19 +154,15 @@ const errorCodes = {
       }
     },
     changeEmail: {
-      invalidClientStatus: {
+      notValidPendingRequest: {
         code: 'security-13-1',
-        message: 'Invalid client status'
+        message: 'Invalid request for pending change email '
       }
     },
     changePhone: {
-      invalidClientStatus: {
-        code: 'security-14-1',
-        message: 'Invalid client status'
-      },
-      emailTaken: {
-        code: 'security-14-2',
-        message: 'Email taken'
+      notValidPendingRequest: {
+        code: 'security-13-1',
+        message: 'Invalid request for pending change email '
       }
     },
     requestChangeEmail: {

@@ -151,6 +151,10 @@ const errorCodes = {
       invalidClientStatus: {
         code: 'security-12-1',
         message: 'Invalid client status'
+      },
+      invalidCurrentPassword: {
+        code: 'security-12-2',
+        message: 'Invalid current password'
       }
     },
     changeEmail: {

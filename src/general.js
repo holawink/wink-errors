@@ -1,16 +1,23 @@
 const errors = {
-  unexpectedError: {
-    code: 'general-0-1',
-    message: 'Unexpected error'
-  },
-  invalidInput: {
+  INVALID_INPUT: {
     code: 'general-0-2',
     message: 'Invalid input'
   },
-  clientNotFound: {
+  INTERNAL_ERROR: {
     code: 'general-0-3',
+    httpStatus: 500,
+    message: 'Internal error'
+  },
+  CLIENT_NOT_FOUND: {
+    code: 'general-0-4',
+    httpStatus: 404,
     message: 'Client not found'
-  }
+  },
+  PROFILE_NOT_FOUND: {
+    code: 'general-0-5',
+    httpStatus: 404,
+    message: 'Profile not found'
+  },
 }
 
 export default errors

@@ -1,9 +1,9 @@
 const errors = {
-  pinHasBeenDefined: {
+  PIN_IS_ALREADY_DEFINED: {
     code: 'profile-1-1',
     message: 'Client has a pin'
   },
-  invalidPin: {
+  INVALID_PIN: {
     code: 'profile-2-1',
     message: 'Current pin does not match'
   }

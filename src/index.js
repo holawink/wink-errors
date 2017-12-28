@@ -1,22 +1,6 @@
 import security from './auth'
-
+import general from './general'
 const errorCodes = {
-  general: {
-    internal: {
-      unexpectedError: {
-        code: 'general-0-1',
-        message: 'Unexpected error'
-      },
-      invalidInput: {
-        code: 'general-0-2',
-        message: 'Invalid input'
-      },
-      clientNotFound: {
-        code: 'general-0-3',
-        message: 'Client not found'
-      }
-    }
-  },
   cards: {
     general: {
       cardNotBelong: {
@@ -48,6 +32,7 @@ const errorCodes = {
     }
   },
 
+  general,
   security
 }
 

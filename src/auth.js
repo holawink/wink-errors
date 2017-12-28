@@ -131,6 +131,6 @@ const errors = {
     code: 'security-16-1',
     message: 'Use a different phone'
   }
-};
+}
 
 export default errors;

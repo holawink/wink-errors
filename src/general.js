@@ -11,6 +11,6 @@ const errors = {
     code: 'general-0-3',
     message: 'Client not found'
   }
-};
+}
 
-export default errors;
+export default errors

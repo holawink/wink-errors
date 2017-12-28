@@ -18,6 +18,16 @@ const errors = {
     httpStatus: 404,
     message: 'Profile not found'
   },
+  ACCOUNT_NOT_FOUND: {
+    code: 'general-0-6',
+    httpStatus: 404,
+    message: 'Account not found'
+  },
+  BANK_ACCOUNT_NOT_FOUND: { // when externalBankAPI.localPayments.getAccountInfo is not found
+    code: 'general-0-6',
+    httpStatus: 404,
+    message: 'Account not found'
+  },
 }
 
 export default errors

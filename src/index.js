@@ -2,12 +2,14 @@ import auth from './auth'
 import general from './general'
 import cards from './cards'
 import profile from './profile'
+import account from './account'
 
 const errorCodes = {
   general,
   cards,
   profile,
-  auth
+  auth,
+  account
 }
 
 const buildErrorResponse = (error = {}, description = '') => {

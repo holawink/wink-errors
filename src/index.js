@@ -3,13 +3,15 @@ import general from './general'
 import cards from './cards'
 import profile from './profile'
 import account from './account'
+import envelopes from'./envelopes'
 
 const errorCodes = {
   general,
   cards,
   profile,
   auth,
-  account
+  account,
+  envelopes
 }
 
 const buildErrorResponse = (error = {}, description = '') => {

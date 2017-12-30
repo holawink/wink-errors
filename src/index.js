@@ -7,6 +7,7 @@ import envelopes from'./envelopes'
 import preregister from'./preRegister'
 import reloadMoney from './reloadMoney'
 import sendMoney from './sendMoney'
+import servicePayments from './servicePayments'
 
 const errorCodes = {
   general,
@@ -17,7 +18,8 @@ const errorCodes = {
   envelopes,
   preregister,
   reloadMoney,
-  sendMoney
+  sendMoney,
+  servicePayments
 }
 
 const buildErrorResponse = (error = {}, description = '') => {

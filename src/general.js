@@ -33,6 +33,11 @@ const errors = {
     httpStatus: 404,
     message: 'Saving not found'
   },
+  SERVICE_NOT_FOUND: {
+    code: 'general-0-11',
+    httpStatus: 404,
+    message: 'Saving not found'
+  },
   INVALID_PIN: {
     code: 'general-0-9',
     message: 'Invalid PIN'

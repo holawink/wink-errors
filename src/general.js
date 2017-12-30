@@ -24,14 +24,18 @@ const errors = {
     message: 'Account not found'
   },
   BANK_ACCOUNT_NOT_FOUND: { // when externalBankAPI.localPayments.getAccountInfo is not found
-    code: 'general-0-6',
+    code: 'general-0-7',
     httpStatus: 404,
     message: 'Bank Account not found'
   },
   SAVING_NOT_FOUND: {
-    code: 'general-0-6',
+    code: 'general-0-8',
     httpStatus: 404,
     message: 'Saving not found'
+  },
+  INVALID_PIN: {
+    code: 'general-0-9',
+    message: 'Invalid PIN'
   }
 }
 

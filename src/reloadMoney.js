@@ -5,7 +5,7 @@ const errors = {
   },
   PIN_NOT_DEFINED: {
     code: 'reload-0-0-3',
-    message: 'Pin does not defined'
+    message: 'Pin is not defined'
   },
   INVALID_ORIGIN_ACCOUNT: {
     code: 'reload-0-0-4',

@@ -36,7 +36,11 @@ const errors = {
   INVALID_PIN: {
     code: 'general-0-9',
     message: 'Invalid PIN'
-  }
+  },
+  PIN_NOT_DEFINED: {
+    code: 'general-0-10',
+    message: 'Pin is not defined'
+  },
 }
 
 export default errors

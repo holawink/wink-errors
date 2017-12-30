@@ -4,6 +4,7 @@ import cards from './cards'
 import profile from './profile'
 import account from './account'
 import envelopes from'./envelopes'
+import preregister from'./preRegister'
 
 const errorCodes = {
   general,
@@ -11,7 +12,8 @@ const errorCodes = {
   profile,
   auth,
   account,
-  envelopes
+  envelopes,
+  preregister
 }
 
 const buildErrorResponse = (error = {}, description = '') => {

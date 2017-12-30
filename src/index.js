@@ -5,6 +5,7 @@ import profile from './profile'
 import account from './account'
 import envelopes from'./envelopes'
 import preregister from'./preRegister'
+import reloadMoney from './reloadMoney'
 
 const errorCodes = {
   general,
@@ -13,7 +14,8 @@ const errorCodes = {
   auth,
   account,
   envelopes,
-  preregister
+  preregister,
+  reloadMoney
 }
 
 const buildErrorResponse = (error = {}, description = '') => {

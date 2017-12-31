@@ -8,6 +8,7 @@ import preregister from'./preRegister'
 import reloadMoney from './reloadMoney'
 import sendMoney from './sendMoney'
 import servicePayments from './servicePayments'
+import pushNotifications from './pushNotifications'
 
 const errorCodes = {
   general,
@@ -19,7 +20,8 @@ const errorCodes = {
   preregister,
   reloadMoney,
   sendMoney,
-  servicePayments
+  servicePayments,
+  pushNotifications
 }
 
 const buildErrorResponse = (error = {}, description = '') => {

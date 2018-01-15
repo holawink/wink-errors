@@ -3,8 +3,8 @@ import general from './general'
 import cards from './cards'
 import profile from './profile'
 import account from './account'
-import envelopes from'./envelopes'
-import preregister from'./preRegister'
+import envelopes from './envelopes'
+import preregister from './preRegister'
 import reloadMoney from './reloadMoney'
 import sendMoney from './sendMoney'
 import servicePayments from './servicePayments'
@@ -24,7 +24,7 @@ const errorCodes = {
   pushNotifications
 }
 
-const buildErrorResponse = (error = {}, description = '') => {
+const buildErrorResponse = (error = {}, description = '', originalError) => {
   let customError = new Error()
   customError.message = error.message || 'Unexpected error'
   customError.httpStatus = error.httpStatus || 409

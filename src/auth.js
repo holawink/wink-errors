@@ -106,6 +106,14 @@ const errors = {
   INVALID_PROFILE_TOKEN: {
     code: 'security-27',
     message: 'Sensitive information altered in the identity token'
+  },
+  DEVICE_TAKEN: {
+    code: 'security-28',
+    message: 'Device Id Taken'
+  },
+  EMAIL_SERVICE_DOWN: {
+    code: 'security-29',
+    message: 'Email service unexpected problem, please contact admin'
   }
 }
 

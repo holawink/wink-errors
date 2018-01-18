@@ -6,6 +6,18 @@ const internalErrors = {
   INVALID_INPUT: {
     code: 'external-2',
     message: 'Invalid input, please check values'
+  },
+  INVALID_PASSWORD_FORMAT: {
+    code: 'external-3',
+    message: 'The password does not comply with the required format.'
+  },
+  CLIENT_NOT_FOUND: {
+    code: 'external-4',
+    message: 'Client not found'
+  },
+  IDENTITY_TAKEN: {
+    code: 'external-5',
+    message: 'Id document has been token'
   }
 }
 
@@ -84,6 +96,30 @@ const externalErrors = {
   },
   '7022': {
     description: 'El País y/o Canal indicado no está autorizado para utilizar la plataforma',
+    error: internalErrors.UNEXPECTED_ERROR
+  },
+  '7032': {
+    description: 'La contraseña no cumple con el formato requerido.',
+    error: internalErrors.INVALID_PASSWORD_FORMAT
+  },
+  '7035': {
+    description: 'El código de cliente debe ser un valor numérico mayor cero',
+    error: internalErrors.UNEXPECTED_ERROR
+  },
+  '7036': {
+    description: 'No se encontró información para el código de cliente {0}',
+    error: internalErrors.CLIENT_NOT_FOUND
+  },
+  '7037': {
+    description: 'El código de usuario debe ser un valor alfanumérico menor o igual a 100 caracteres.',
+    error: internalErrors.UNEXPECTED_ERROR
+  },
+  '7041': {
+    description: 'El Cliente {0} con número de identificación {1} ya existe en el sistema',
+    error: internalErrors.IDENTITY_TAKEN
+  },
+  '7042': {
+    description: 'Los Servicios del Core Bancario no están disponibles para obtener la información del cliente {0}',
     error: internalErrors.UNEXPECTED_ERROR
   },
   '10023': {

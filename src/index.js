@@ -28,9 +28,9 @@ const errorCodes = {
 
 const buildErrorResponse = (error = {}, description = '', originalError) => {
   let customError = new Error()
-  customError.message = error.message || 'Unexpected error'
-  customError.httpStatus = error.httpStatus || 409
-  customError.code = error.code || 'general-0-1'
+  customError.message = error.message || general.INTERNAL_ERROR.message
+  customError.httpStatus = error.httpStatus || general.INTERNAL_ERROR.httpStatus
+  customError.code = error.code || general.INTERNAL_ERROR.code
   customError.description = description
   return customError
 }
@@ -38,17 +38,16 @@ const buildErrorResponse = (error = {}, description = '', originalError) => {
 const buildExternalErrorResponse = (error = {}, description) => {
   let customError = new Error()
   if (error.mainError) {
-    customError.message = error.mainError.message || 'Unexpected external error'
+    customError.message = error.mainError.message || external.DEFAULT.error.message
     customError.httpStatus = error.mainError.httpStatus || 409
-    customError.code = error.mainError.code || 'external-1'
-    customError.description = description || error.mainError.description
+    customError.code = error.mainError.code || external.DEFAULT.error.code
+    customError.description = description || error.mainError.description || external.DEFAULT.description
   } else {
-
+    customError.message = error.message || external.DEFAULT.error.message
+    customError.httpStatus = error.httpStatus || 409
+    customError.code = error.code || external.DEFAULT.error.code
+    customError.description = description || ''
   }
-  customError.message = error.message || 'Unexpected external error'
-  customError.httpStatus = error.httpStatus || 409
-  customError.code = error.code || 'external-1'
-  customError.description = description || ''
   return customError
 }
 

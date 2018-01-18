@@ -9,6 +9,7 @@ import reloadMoney from './reloadMoney'
 import sendMoney from './sendMoney'
 import servicePayments from './servicePayments'
 import pushNotifications from './pushNotifications'
+import external from './externalBank'
 
 const errorCodes = {
   general,
@@ -21,7 +22,8 @@ const errorCodes = {
   reloadMoney,
   sendMoney,
   servicePayments,
-  pushNotifications
+  pushNotifications,
+  external
 }
 
 const buildErrorResponse = (error = {}, description = '', originalError) => {
@@ -33,7 +35,25 @@ const buildErrorResponse = (error = {}, description = '', originalError) => {
   return customError
 }
 
+const buildExternalErrorResponse = (error = {}, description) => {
+  let customError = new Error()
+  if (error.mainError) {
+    customError.message = error.mainError.message || 'Unexpected external error'
+    customError.httpStatus = error.mainError.httpStatus || 409
+    customError.code = error.mainError.code || 'external-1'
+    customError.description = description || error.mainError.description
+  } else {
+
+  }
+  customError.message = error.message || 'Unexpected external error'
+  customError.httpStatus = error.httpStatus || 409
+  customError.code = error.code || 'external-1'
+  customError.description = description || ''
+  return customError
+}
+
 module.exports = {
   buildErrorResponse,
+  buildExternalErrorResponse,
   errorCodes
 }

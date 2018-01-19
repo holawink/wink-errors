@@ -18,6 +18,18 @@ const internalErrors = {
   IDENTITY_TAKEN: {
     code: 'external-5',
     message: 'Id document has been token'
+  },
+  ACCESS_DENIED: {
+    code: 'external-6',
+    message: 'Access denied'
+  },
+  INVALID_OTP: {
+    code: 'external-7',
+    message: 'Invalid OTP value'
+  },
+  REPEATED_PASSWORD: {
+    code: 'external-8',
+    message: 'Please do not use a previous password'
   }
 }
 
@@ -45,6 +57,10 @@ const externalErrors = {
   '6': {
     description: 'El número de teléfono {0} es inválido.',
     error: internalErrors.INVALID_INPUT
+  },
+  '7': {
+    description: 'Usuario no autorizado para ejecutar la función solicitada',
+    error: internalErrors.UNEXPECTED_ERROR
   },
   '38': {
     description: 'El estado civil {0} es inválido',
@@ -86,6 +102,10 @@ const externalErrors = {
     description: 'El tipo de teléfono {0} es inválido',
     error: internalErrors.INVALID_INPUT
   },
+  '1010': {
+    description: 'El código de cliente {0} no existe',
+    error: internalErrors.CLIENT_NOT_FOUND
+  },
   '7020': {
     description: 'Host no autorizado para utilizar la plataforma',
     error: internalErrors.UNEXPECTED_ERROR
@@ -98,9 +118,29 @@ const externalErrors = {
     description: 'El País y/o Canal indicado no está autorizado para utilizar la plataforma',
     error: internalErrors.UNEXPECTED_ERROR
   },
+  '7023': {
+    description: 'No tiene una sesión activa para ejecutar la transacción',
+    error: internalErrors.ACCESS_DENIED
+  },
+  '7024': {
+    description: 'Código de usuario o contraseña inválida',
+    error: internalErrors.INVALID_CREDENTIALS
+  },
+  '7031': {
+    description: 'El valor del OTP indicado es incorrecto.',
+    error: internalErrors.INVALID_OTP
+  },
   '7032': {
     description: 'La contraseña no cumple con el formato requerido.',
     error: internalErrors.INVALID_PASSWORD_FORMAT
+  },
+  '7033': {
+    description: 'La nueva contraseña y su confirmación deben ser iguales.',
+    error: internalErrors.UNEXPECTED_ERROR
+  },
+  '7034': {
+    description: 'La nueva contraseña debe ser diferente a las últimas {0} registradas',
+    error: internalErrors.REPEATED_PASSWORD
   },
   '7035': {
     description: 'El código de cliente debe ser un valor numérico mayor cero',

@@ -6,7 +6,7 @@
   "scripts": {
     "test": "nyc mocha --compilers js:babel-core/register -t 5000 --watch",
     "postinstall": "babel src -d dist --source-maps --plugins transform-object-rest-spread",
-    "build": "babel src -d dist --source-maps --plugins transform-object-rest-spread && npm run toJSON",
+    "build": "babel src -d dist --source-maps --plugins transform-object-rest-spread",
     "watch": "babel --watch src -d dist --source-maps --plugins transform-object-rest-spread",
     "toJSON": "babel-node ./debug/index"
   },

@@ -49,6 +49,10 @@ const errors = {
   EMAIL_SERVICE_DOWN: {
     code: 'general-11',
     message: 'Email service unexpected problem, please contact admin'
+  },
+  TX_CATEGORY_NOT_FOUND: {
+    code: 'general-12',
+    message: 'Transaction category not found'
   }
 }
 

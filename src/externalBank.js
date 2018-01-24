@@ -99,9 +99,13 @@ const internalErrors = {
     code: 'external-25',
     message: 'The destination account is blocked'
   },
-  DESTINATION_ACCOUNT_CLOSED: {
+  UNEXPECTED_ERROR_SERVICE_PROVIDER: {
+    code: 'external-27',
+    message: 'It was not possible to obtain the payment information of the service consulted. Try to make the query again.'
+  },
+  NOT_PENDING_INVOICES: {
     code: 'external-26',
-    message: 'The destination account is closed'
+    message: 'No pending invoices'
   }
 }
 
@@ -218,6 +222,10 @@ const externalErrors = {
     description: 'La cuenta destino {0} se encuentra cerrada',
     error: internalErrors.DESTINATION_ACCOUNT_CLOSED
   },
+  '3044': {
+    description: 'No fue posible debitar su cuenta {0} para efectuar el pago del servicio.',
+    error: internalErrors.UNEXPECTED_ERROR
+  },
   '7020': {
     description: 'Host no autorizado para utilizar la plataforma',
     error: internalErrors.UNEXPECTED_ERROR
@@ -281,6 +289,22 @@ const externalErrors = {
   '7043': {
     description: 'No fue posible verificar el valor del doble factor de autenticación para procesar su transacción',
     error: internalErrors.UNEXPECTED_2FA_ERROR
+  },
+  '8000': {
+    description: 'No fue posible obtener la información de pago del servicio consultado. Intente realizar la consulta nuevamente.',
+    error: internalErrors.UNEXPECTED_ERROR_SERVICE_PROVIDER
+  },
+  '8001': {
+    description: 'No fue posible obtener la información de pago del servicio consultado. Intente realizar la consulta nuevamente.',
+    error: internalErrors.UNEXPECTED_ERROR_SERVICE_PROVIDER
+  },
+  '8002': {
+    description: 'No fue posible realizar el pago del servicio Facturador={0}, Servicio={1}, Moneda={2}. No. Servicio={3} por el motivo ={4}',
+    error: internalErrors.UNEXPECTED_ERROR_SERVICE_PROVIDER
+  },
+  '8003': {
+    description: 'No se encontraron pagos pendientes.',
+    error: internalErrors.NOT_PENDING_INVOICES
   },
   '9020': {
     description: 'Monto no autorizado',

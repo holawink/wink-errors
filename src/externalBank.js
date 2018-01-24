@@ -90,6 +90,18 @@ const internalErrors = {
   OUTSIDE_ALLOWED_TIME: {
     code: 'external-23',
     message: 'Transaction outside the allowed time'
+  },
+  DESTINATION_ACCOUNT_NOT_ALLOW_ACCREDITED: {
+    code: 'external-24',
+    message: 'The Destination Account does not allow to be accredited'
+  },
+  DESTINATION_ACCOUNT_BLOCKED: {
+    code: 'external-25',
+    message: 'The destination account is blocked'
+  },
+  DESTINATION_ACCOUNT_CLOSED: {
+    code: 'external-26',
+    message: 'The destination account is closed'
   }
 }
 
@@ -193,6 +205,18 @@ const externalErrors = {
   '3014': {
     description: 'La Cuenta Origin {0} no permite ser debitada',
     error: internalErrors.ORIGIN_ACCOUNT_NOT_ALLOW_DEBITED
+  },
+  '3017': {
+    description: 'La Cuenta Destino {0} no permite ser acreditada',
+    error: internalErrors.DESTINATION_ACCOUNT_NOT_ALLOW_ACCREDITED
+  },
+  '3034': {
+    description: 'La cuenta destino {0} se encuentra bloqueada',
+    error: internalErrors.DESTINATION_ACCOUNT_BLOCKED
+  },
+  '3035': {
+    description: 'La cuenta destino {0} se encuentra cerrada',
+    error: internalErrors.DESTINATION_ACCOUNT_CLOSED
   },
   '7020': {
     description: 'Host no autorizado para utilizar la plataforma',

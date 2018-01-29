@@ -53,7 +53,16 @@ const errors = {
   TX_CATEGORY_NOT_FOUND: {
     code: 'general-12',
     message: 'Transaction category not found'
+  },
+  INVALID_AUTH_TOKEN: {
+    code: 'general-13',
+    message: 'Invalid token'
+  },
+  REQUIRED_AUTH_TOKEN: {
+    code: 'general-14',
+    message: 'Required Authentication token'
   }
+
 }
 
 export default errors

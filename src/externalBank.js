@@ -100,12 +100,52 @@ const internalErrors = {
     message: 'The destination account is blocked'
   },
   UNEXPECTED_ERROR_SERVICE_PROVIDER: {
-    code: 'external-27',
+    code: 'external-26',
     message: 'It was not possible to obtain the payment information of the service consulted. Try to make the query again.'
   },
   NOT_PENDING_INVOICES: {
-    code: 'external-26',
+    code: 'external-27',
     message: 'No pending invoices'
+  },
+  INVALID_EMAIL: {
+    code: 'external-28',
+    message: 'Invalid email'
+  },
+  INVALID_IDENTITY_NUMBER: {
+    code: 'external-29',
+    message: 'Invalid identity number'
+  },
+  INVALID_CARD_NUMBER: {
+    code: 'external-30',
+    message: 'Invalid card number'
+  },
+  INVALID_PLACE: {
+    code: 'external-31',
+    message: 'Invalid place'
+  },
+  CARD_NUMBER_NOT_FOUND: {
+    code: 'external-32',
+    message: 'Card number not found'
+  },
+  REPEATED_PRIORITY: {
+    code: 'external-33',
+    message: 'It is not possible to set the priority {0} to the account No. {1} because there is already another account with that defined priority number'
+  },
+  ACCOUNT_NOT_BELONG_TO_CARD_HOLDER: {
+    code: 'external-34',
+    message: 'It is not possible to complete the process of linking accounts of card No. {0}, because the following selected accounts do not belong to the card holder: {1}'
+  },
+  CARD_IS_IN_STATE_THAT_CAN_NOT_BE_MODIFIED: {
+    code: 'external-35',
+    message: 'Debit card {0} is in a state that can not be modified'
+  },
+  CARD_NOT_BELONG_TO_CARD_HOLDER: {
+    code: 'external-36',
+    message: 'It is not possible to process the requested transaction because the Debit Card {0} does not belong to it'
+  },
+  INVALID_BLOCK_MONEY: {
+    code: 'external-37',
+    message: 'Invalid block number'
   }
 }
 
@@ -130,12 +170,28 @@ const externalErrors = {
     description: 'Se requiere el valor para el campo {0}',
     error: internalErrors.INVALID_INPUT
   },
+  '5': {
+    description: 'El correo electrónico {0} es inválido',
+    error: internalErrors.INVALID_EMAIL
+  },
   '6': {
     description: 'El número de teléfono {0} es inválido.',
     error: internalErrors.INVALID_INPUT
   },
   '7': {
     description: 'Usuario no autorizado para ejecutar la función solicitada',
+    error: internalErrors.UNEXPECTED_ERROR
+  },
+  '8': {
+    description: 'Número de identificación inválido',
+    error: internalErrors.INVALID_IDENTITY_NUMBER
+  },
+  '9': {
+    description: 'El número de tarjeta {0} no es válido',
+    error: internalErrors.INVALID_CARD_NUMBER
+  },
+  '12': {
+    description: 'El tipo de tarjeta {0} es inválido',
     error: internalErrors.UNEXPECTED_ERROR
   },
   '23': {
@@ -157,6 +213,10 @@ const externalErrors = {
   '44': {
     description: 'El código de país {0} es incorrecto',
     error: internalErrors.INVALID_INPUT
+  },
+  '45': {
+    description: 'El código de división política {0} de nivel {1} es incorrecto',
+    error: internalErrors.INVALID_PLACE
   },
   '52': {
     description: 'La fecha {0} no es válida',
@@ -186,9 +246,17 @@ const externalErrors = {
     description: 'El tipo de teléfono {0} es inválido',
     error: internalErrors.INVALID_INPUT
   },
+  '66': {
+    description: 'La sucursal {0} {1} es inválida',
+    error: internalErrors.UNEXPECTED_ERROR
+  },
   '1010': {
     description: 'El código de cliente {0} no existe',
     error: internalErrors.CLIENT_NOT_FOUND
+  },
+  '3004': {
+    description: 'Número de cuenta inválida: {0}',
+    error: internalErrors.UNEXPECTED_ERROR
   },
   '3010': {
     description: 'La Cuenta Origen {0} no existe',
@@ -214,6 +282,10 @@ const externalErrors = {
     description: 'La Cuenta Destino {0} no permite ser acreditada',
     error: internalErrors.DESTINATION_ACCOUNT_NOT_ALLOW_ACCREDITED
   },
+  '3033': {
+    description: 'No es posible definir la prioridad {0} a la cuenta No. {1} pues ya existe otra cuenta con ese número de prioridad definido',
+    error: internalErrors.REPEATED_PRIORITY
+  },
   '3034': {
     description: 'La cuenta destino {0} se encuentra bloqueada',
     error: internalErrors.DESTINATION_ACCOUNT_BLOCKED
@@ -221,6 +293,10 @@ const externalErrors = {
   '3035': {
     description: 'La cuenta destino {0} se encuentra cerrada',
     error: internalErrors.DESTINATION_ACCOUNT_CLOSED
+  },
+  '3036': {
+    description: 'El número de bloqueo no existe',
+    error: internalErrors.INVALID_BLOCK_MONEY
   },
   '3044': {
     description: 'No fue posible debitar su cuenta {0} para efectuar el pago del servicio.',
@@ -354,6 +430,10 @@ const externalErrors = {
     description: 'El formato del nombre del cliente destino es incorrecto',
     error: internalErrors.UNEXPECTED_ERROR
   },
+  '9033': {
+    description: 'El número de la cuenta a consultar es incorrecto.',
+    error: internalErrors.INVALID_DESTINATION_ACCOUNT_NUMBER
+  },
   '9034': {
     description: 'La Entidad Destino es inválida',
     error: internalErrors.UNEXPECTED_ERROR
@@ -389,6 +469,38 @@ const externalErrors = {
   '9047': {
     description: 'El formato del nombre del titular del servicio a debitar es incorrecto',
     error: internalErrors.UNEXPECTED_ERROR
+  },
+  '10001': {
+    description: 'No es posible completar el proceso de vinculación de cuentas de la tarjeta No. {0}, debido a que las siguientes cuentas seleccionadas no pertenecen al titular de la tarjeta: {1}',
+    error: internalErrors.ACCOUNT_NOT_BELONG_TO_CARD_HOLDER
+  },
+  '10005': {
+    description: 'No es posible procesar la transacción solicitada, debido a que los datos de la Tarjeta de Débito {0} no pudieron ser verificados',
+    error: internalErrors.UNEXPECTED_ERROR
+  },
+  '10006': {
+    description: 'No fue posible realizar el bloqueo de su tarjeta No. {0} en este momento.  Intente realizar la operación nuevamente.',
+    error: internalErrors.UNEXPECTED_ERROR
+  },
+  '10009': {
+    description: 'No fue posible realizar el desbloqueo de su tarjeta No. {0} en este momento.  Intente realizar la operación nuevamente.',
+    error: internalErrors.UNEXPECTED_ERROR
+  },
+  '10010': {
+    description: 'No es posible procesar la transacción solicitada pues la Tarjeta de Débito {0} pues no le pertenece',
+    error: internalErrors.CARD_NOT_BELONG_TO_CARD_HOLDER
+  },
+  '10011': {
+    description: 'No es posible completar el proceso de vinculación de cuentas de la tarjeta No. {0}, debido a que las siguientes cuentas seleccionadas no pertenecen al titular de la tarjeta: {1}',
+    error: internalErrors.ACCOUNT_NOT_BELONG_TO_CARD_HOLDER
+  },
+  '10020': {
+    description: 'La Tarjeta de Débito {0} no existe',
+    error: internalErrors.CARD_NUMBER_NOT_FOUND
+  },
+  '10021': {
+    description: 'La tarjeta de débito {0} se encuentra en un estado que no permite ser modificado',
+    error: internalErrors.CARD_IS_IN_STATE_THAT_CAN_NOT_BE_MODIFIED
   },
   '10023': {
     description: 'La marca de la tarjeta de débito {0} es inválida',

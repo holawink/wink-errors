@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "test": "nyc mocha --compilers js:babel-core/register -t 5000 --watch",
-    "postinstall": "babel src -d dist --source-maps --plugins transform-object-rest-spread",
+    "postinstall": "./node_modules/babel-cli/bin/babel.js src -d dist --source-maps --plugins transform-object-rest-spread",
     "build": "babel src -d dist --source-maps --plugins transform-object-rest-spread",
     "watch": "babel --watch src -d dist --source-maps --plugins transform-object-rest-spread",
     "toJSON": "babel-node ./debug/index"
@@ -30,6 +30,7 @@
     "write-json-file": "^2.3.0"
   },
   "dependencies": {
+    "babel-cli": "^6.26.0",
     "babel-runtime": "^6.26.0"
   }
 }

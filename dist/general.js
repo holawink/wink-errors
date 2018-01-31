@@ -66,8 +66,11 @@ const errors = {
   REQUIRED_AUTH_TOKEN: {
     code: 'general-14',
     message: 'Required Authentication token'
+  },
+  GRAPHQL_UNKNOWN_CODE: {
+    code: 'general-15',
+    message: 'Unable to get code from microservice error'
   }
-
 };
 
 exports.default = errors;

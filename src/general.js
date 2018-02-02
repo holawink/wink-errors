@@ -65,6 +65,11 @@ const errors = {
   GRAPHQL_UNKNOWN_CODE: {
     code: 'general-15',
     message: 'Unable to get code from microservice error'
+  },
+  BANK_ACCOUNTS_NOT_FOUND: { // when externalBankAPI.getAccounts returns empty array
+    code: 'general-16',
+    httpStatus: 404,
+    message: 'No accounts found'
   }
 }
 

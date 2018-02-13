@@ -70,6 +70,11 @@ const errors = {
     code: 'general-16',
     httpStatus: 404,
     message: 'No accounts found'
+  },
+  TX_ALREADY_PROCESSED: {
+    code: 'general-17',
+    httpStatus: 404,
+    message: 'Transaction already processed.'
   }
 }
 

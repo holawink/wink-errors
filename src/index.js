@@ -26,26 +26,26 @@ const errorCodes = {
   external
 }
 
-const buildErrorResponse = (error = {}, description = '', originalError) => {
+const buildErrorResponse = (error = {}, description, originalError) => {
   let customError = new Error()
-  customError.message = error.message || general.INTERNAL_ERROR.message
-  customError.httpStatus = error.httpStatus || general.INTERNAL_ERROR.httpStatus
-  customError.code = error.code || general.INTERNAL_ERROR.code
-  customError.description = description
+  customError.message = error.message || general.INTERNAL_ERROR.message || ''
+  customError.httpStatus = error.httpStatus || general.INTERNAL_ERROR.httpStatus || 409
+  customError.code = error.code || general.INTERNAL_ERROR.code || ''
+  customError.description = description || ''
   return customError
 }
 
-const buildExternalErrorResponse = (error = {}, description) => {
+const buildExternalErrorResponse = (error = {}, description, originalError) => {
   let customError = new Error()
   if (error.mainError) {
-    customError.message = error.mainError.message || external.DEFAULT.error.message
+    customError.message = error.mainError.message || external.DEFAULT.error.message || ''
     customError.httpStatus = error.mainError.httpStatus || 409
-    customError.code = error.mainError.code || external.DEFAULT.error.code
-    customError.description = description || error.mainError.description || external.DEFAULT.description
+    customError.code = error.mainError.code || external.DEFAULT.error.code || ''
+    customError.description = description || error.mainError.description || external.DEFAULT.description || ''
   } else {
-    customError.message = error.message || external.DEFAULT.error.message
+    customError.message = error.message || external.DEFAULT.error.message || ''
     customError.httpStatus = error.httpStatus || 409
-    customError.code = error.code || external.DEFAULT.error.code
+    customError.code = error.code || external.DEFAULT.error.code || ''
     customError.description = description || ''
   }
   return customError

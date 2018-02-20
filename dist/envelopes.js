@@ -5,18 +5,15 @@ Object.defineProperty(exports, "__esModule", {
 });
 const errors = {
   INSUFFICIENT_FUNDS: {
-    code: 'w-7-0-2',
-    httpStatus: 400,
+    code: 'envelopes-1',
     message: 'Error insufficient funds'
   },
   INVALID_SAVING_TYPE_FOR_ADDING_FUNDS: {
-    code: 'w-7-0-3',
-    httpStatus: 400,
+    code: 'envelopes-2',
     message: 'Cannot add funds to this envelope'
   },
   ENVELOPE_DOES_NOT_BELONG_TO_ACCOUNT_ID: {
-    code: 'w-7-0-3',
-    httpStatus: 400,
+    code: 'envelopes-3',
     message: 'Envelope must belong to client'
   }
 };

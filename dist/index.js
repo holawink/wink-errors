@@ -65,26 +65,17 @@ const errorCodes = {
   external: _externalBank2.default
 };
 
-const buildErrorResponse = (error = {}, description = '', originalError) => {
-  let customError = new Error();
-  customError.message = error.message || _general2.default.INTERNAL_ERROR.message;
-  customError.httpStatus = error.httpStatus || _general2.default.INTERNAL_ERROR.httpStatus;
-  customError.code = error.code || _general2.default.INTERNAL_ERROR.code;
-  customError.description = description;
-  return customError;
-};
-
-const buildExternalErrorResponse = (error = {}, description) => {
+const buildErrorResponse = (error = {}, description, originalError) => {
   let customError = new Error();
   if (error.mainError) {
-    customError.message = error.mainError.message || _externalBank2.default.DEFAULT.error.message;
+    customError.message = error.mainError.message || _externalBank2.default.DEFAULT.error.message || '';
     customError.httpStatus = error.mainError.httpStatus || 409;
-    customError.code = error.mainError.code || _externalBank2.default.DEFAULT.error.code;
-    customError.description = description || error.mainError.description || _externalBank2.default.DEFAULT.description;
+    customError.code = error.mainError.code || _externalBank2.default.DEFAULT.error.code || '';
+    customError.description = description || error.mainError.description || _externalBank2.default.DEFAULT.description || '';
   } else {
-    customError.message = error.message || _externalBank2.default.DEFAULT.error.message;
-    customError.httpStatus = error.httpStatus || 409;
-    customError.code = error.code || _externalBank2.default.DEFAULT.error.code;
+    customError.message = error.message || _general2.default.INTERNAL_ERROR.message || '';
+    customError.httpStatus = error.httpStatus || _general2.default.INTERNAL_ERROR.httpStatus || 409;
+    customError.code = error.code || _general2.default.INTERNAL_ERROR.code || '';
     customError.description = description || '';
   }
   return customError;
@@ -92,7 +83,6 @@ const buildExternalErrorResponse = (error = {}, description) => {
 
 module.exports = {
   buildErrorResponse,
-  buildExternalErrorResponse,
   errorCodes
 };
 //# sourceMappingURL=index.js.map

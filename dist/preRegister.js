@@ -5,9 +5,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 const errors = {
   CANNOT_SUBSCRIBE_TO_MAILCHIMP: {
-    code: 'preRegister-0-1',
-    externalCodes: '',
-    httpStatus: 400,
+    code: 'preRegister-1',
     message: 'Error on Register on MailChimp'
   }
 };

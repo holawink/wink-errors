@@ -4,6 +4,10 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 const errors = {
+  INVALID_REQUEST: {
+    code: 'general-0',
+    message: 'Invalid request'
+  },
   INVALID_INPUT: {
     code: 'general-1',
     message: 'Invalid input'
@@ -78,8 +82,11 @@ const errors = {
   },
   TX_ALREADY_PROCESSED: {
     code: 'general-17',
-    httpStatus: 404,
     message: 'Transaction already processed.'
+  },
+  INSUFFICIENT_FUNDS: {
+    code: 'general-18',
+    message: 'Insufficient funds.'
   }
 };
 

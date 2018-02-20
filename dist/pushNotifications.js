@@ -5,15 +5,11 @@ Object.defineProperty(exports, "__esModule", {
 });
 const errors = {
   MISSING_QUEUE_URL: {
-    code: 'push-0-1',
-    externalCodes: '',
-    httpStatus: 500,
+    code: 'push-1',
     message: 'Missing URL for SQS Queue'
   },
   MISSING_QUEUE: {
-    code: 'push-0-2',
-    externalCodes: '',
-    httpStatus: 500,
+    code: 'push-2',
     message: 'Missing SQS Queue'
   }
 };

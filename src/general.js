@@ -77,8 +77,11 @@ const errors = {
   },
   TX_ALREADY_PROCESSED: {
     code: 'general-17',
-    httpStatus: 404,
     message: 'Transaction already processed.'
+  },
+  INSUFFICIENT_FUNDS: {
+    code: 'general-18',
+    message: 'Insufficient funds.'
   }
 }
 

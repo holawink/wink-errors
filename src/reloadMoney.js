@@ -1,6 +1,6 @@
 const errors = {
   INVALID_ORIGIN_ACCOUNT: {
-    code: 'reload-0-0-4',
+    code: 'reload-1',
     message: 'Invalid origin account'
   }
 }

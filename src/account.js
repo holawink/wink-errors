@@ -1,8 +1,6 @@
 const errors = {
   ALREADY_SAVED: {
-    code: 'w-3-0-5',
-    externalCodes: '',
-    httpStatus: 409,
+    code: 'account-1',
     message: 'Account already saved'
   }
 }

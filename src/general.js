@@ -1,4 +1,8 @@
 const errors = {
+  INVALID_REQUEST: {
+    code: 'general-0',
+    message: 'Invalid request'
+  },
   INVALID_INPUT: {
     code: 'general-1',
     message: 'Invalid input'

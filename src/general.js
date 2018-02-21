@@ -82,6 +82,10 @@ const errors = {
   INSUFFICIENT_FUNDS: {
     code: 'general-18',
     message: 'Insufficient funds.'
+  },
+  CARD_NOT_FOUND: {
+    code: 'general-19',
+    message: 'Card not found.'
   }
 }
 

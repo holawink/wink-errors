@@ -86,7 +86,11 @@ const errors = {
   CARD_NOT_FOUND: {
     code: 'general-19',
     message: 'Card not found.'
-  }
+  },
+  PIN_IS_ALREADY_DEFINED: {
+    code: 'general-20',
+    message: 'Client has a pin'
+  },
 }
 
 export default errors

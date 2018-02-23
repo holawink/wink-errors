@@ -1,3 +1,5 @@
+// Obsoletos borrar en proximos deploys
+
 const errors = {
   PIN_IS_ALREADY_DEFINED: {
     code: 'profile-1',

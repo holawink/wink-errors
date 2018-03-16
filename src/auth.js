@@ -110,6 +110,10 @@ const errors = {
   DEVICE_TAKEN: {
     code: 'security-28',
     message: 'Device Id Taken'
+  },
+  PENDING_TRUSTED_DEVICE_CODE: {
+    code: 'security-29',
+    message: 'You have a pending code'
   }
 }
 

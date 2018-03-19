@@ -114,6 +114,10 @@ const errors = {
   PENDING_TRUSTED_DEVICE_CODE: {
     code: 'security-29',
     message: 'You have a pending code'
+  },
+  NOT_PENDING_TRUSTED_DEVICE_CODE: {
+    code: 'security-30',
+    message: 'You do not have a pending code or it had expired'
   }
 }
 

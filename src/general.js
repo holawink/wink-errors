@@ -91,6 +91,10 @@ const errors = {
     code: 'general-20',
     message: 'Client has a pin'
   },
+  MAX_AMOUNT_LIMIT_EXCEEDED: {
+    code: 'general-21',
+    message: 'Maximum amount exceeded'
+  }
 }
 
 export default errors

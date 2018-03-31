@@ -14,7 +14,7 @@ const errors = {
   },
   REDUCE_AMOUNT_LIMIT_EXCEEDED: {
     code: 'reload-3',
-    message: 'Amounts exceeds monthy limit'
+    message: 'Amounts exceeds monthly limit'
   }
 };
 

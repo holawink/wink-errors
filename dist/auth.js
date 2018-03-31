@@ -115,6 +115,14 @@ const errors = {
   DEVICE_TAKEN: {
     code: 'security-28',
     message: 'Device Id Taken'
+  },
+  PENDING_TRUSTED_DEVICE_CODE: {
+    code: 'security-29',
+    message: 'You have a pending trusted device code'
+  },
+  NOT_PENDING_TRUSTED_DEVICE_CODE: {
+    code: 'security-30',
+    message: 'You do not have a pending trusted device code or it had expired'
   }
 };
 

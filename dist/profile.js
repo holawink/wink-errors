@@ -3,6 +3,8 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+// Obsoletos borrar en proximos deploys
+
 const errors = {
   PIN_IS_ALREADY_DEFINED: {
     code: 'profile-1',

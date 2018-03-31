@@ -11,6 +11,10 @@ const errors = {
     code: 'envelopes-3',
     message: 'Envelope must belong to client'
   },
+  SAVINGS_BLOCKED: {
+    code: 'envelopes-4',
+    message: 'You are not allowed to reload funds'
+  }
 }
 
 export default errors

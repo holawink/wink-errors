@@ -10,6 +10,10 @@ const errors = {
   CURRENCY_DOES_NOT_MATCH: {
     code: 'sendMoney-3',
     message: 'Currency does not match'
+  },
+  SEND_BLOCKED: {
+    code: 'sendMoney-4',
+    message: 'You are not allowed to send funds'
   }
 }
 

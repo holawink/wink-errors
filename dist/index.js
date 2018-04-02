@@ -48,6 +48,10 @@ var _externalBank = require('./externalBank');
 
 var _externalBank2 = _interopRequireDefault(_externalBank);
 
+var _email = require('./email');
+
+var _email2 = _interopRequireDefault(_email);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 const errorCodes = {
@@ -62,7 +66,8 @@ const errorCodes = {
   sendMoney: _sendMoney2.default,
   servicePayments: _servicePayments2.default,
   pushNotifications: _pushNotifications2.default,
-  external: _externalBank2.default
+  external: _externalBank2.default,
+  email: _email2.default
 };
 
 const buildErrorResponse = (error = {}, description, originalError) => {

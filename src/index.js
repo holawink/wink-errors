@@ -10,6 +10,7 @@ import sendMoney from './sendMoney'
 import servicePayments from './servicePayments'
 import pushNotifications from './pushNotifications'
 import external from './externalBank'
+import email from './email'
 
 const errorCodes = {
   general,
@@ -23,7 +24,8 @@ const errorCodes = {
   sendMoney,
   servicePayments,
   pushNotifications,
-  external
+  external,
+  email
 }
 
 const buildErrorResponse = (error = {}, description, originalError) => {

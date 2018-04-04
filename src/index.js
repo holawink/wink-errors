@@ -29,6 +29,10 @@ const errorCodes = {
 }
 
 const buildErrorResponse = (error = {}, description, originalError) => {
+  console.log('buildErrorResponse')
+  console.log(error)
+  console.log(description)
+  console.log(originalError)
   let customError = new Error()
   if (error.mainError) {
     customError.message = error.mainError.message || external.DEFAULT.error.message || ''

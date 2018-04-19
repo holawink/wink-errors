@@ -94,10 +94,6 @@ const errors = {
   MAX_AMOUNT_LIMIT_EXCEEDED: {
     code: 'general-21',
     message: 'Maximum amount exceeded'
-  },
-  PRUEBA: {
-    code: 'MENSAJE DE PRUEBA',
-    message: 'Maximum amount exceeded'
   }
 }
 

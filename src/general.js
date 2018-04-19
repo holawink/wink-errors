@@ -94,6 +94,10 @@ const errors = {
   MAX_AMOUNT_LIMIT_EXCEEDED: {
     code: 'general-21',
     message: 'Maximum amount exceeded'
+  },
+  SIGNUP_CLOSE: {
+    code: 'general-22',
+    message: '¡OOOOPS! En este momento no podemos registrar tu correo. Estamos dándole mantenimiento a la app, por favor intentá nuevamente a partir del Martes 24 de Abril.'
   }
 }
 

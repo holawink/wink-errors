@@ -96,7 +96,7 @@ const errors = {
     message: 'Maximum amount exceeded'
   },
   SIGNUP_CLOSE: {
-    code: 'En este momento no podemos registrar tu correo. Estamos dándole mantenimiento a la app, por favor intentá nuevamente a partir del Martes 24 de Abril.',
+    code: 'En este momento no podemos registrar tu correo. Estamos dándole mantenimiento a la app, por favor intentá nuevamente a partir del Miercoles 3 de Mayo.',
     message: '¡OOOOPS! En este momento no podemos registrar tu correo. Estamos dándole mantenimiento a la app, por favor intentá nuevamente a partir del Martes 24 de Abril.'
   }
 }

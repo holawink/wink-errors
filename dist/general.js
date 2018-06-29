@@ -4,6 +4,10 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 const errors = {
+  UNEXPECTED_EXTERNAL_ERROR: {
+    code: 'external-1',
+    message: 'Unexpected external error'
+  },
   INVALID_REQUEST: {
     code: 'general-0',
     message: 'Invalid request'

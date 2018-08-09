@@ -106,6 +106,10 @@ const errors = {
   SIGNUP_CLOSE: {
     code: 'En este momento no podemos registrar tu correo. Estamos dándole mantenimiento a la app, por favor intentá nuevamente a partir del Miercoles 3 de Mayo.',
     message: '¡OOOOPS! En este momento no podemos registrar tu correo. Estamos dándole mantenimiento a la app, por favor intentá nuevamente a partir del Martes 24 de Abril.'
+  },
+  INVALID_EMAIL: {
+    code: 'general-24',
+    message: 'EL formato del email no es válido.'
   }
 }
 

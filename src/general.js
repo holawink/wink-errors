@@ -109,7 +109,11 @@ const errors = {
   },
   INVALID_EMAIL: {
     code: 'general-24',
-    message: 'EL formato del email no es válido.'
+    message: 'El formato del email no es válido.'
+  },
+  PENDING_IDENTITY_INFO: {
+    code: 'general-25',
+    message: 'Necesita completar datos de identidad de registro.'
   }
 }
 

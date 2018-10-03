@@ -118,6 +118,10 @@ const errors = {
   NOT_PENDING_TRUSTED_DEVICE_CODE: {
     code: 'security-30',
     message: 'You do not have a pending trusted device code or it had expired'
+  },
+  PENDING_CONFIRM_PHONE: {
+    code: 'security-31',
+    message: 'Please confirm phone'
   }
 }
 

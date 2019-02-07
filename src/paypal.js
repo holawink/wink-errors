@@ -6,6 +6,10 @@ const errors = {
   TICKET_NOT_FOUND: {
     code: 'paypal-2',
     message: 'Ticket not found'
+  },
+  INVALID_PAYPAL_ACCOUNT: {
+    code: 'paypal-3',
+    message: 'Invalid paypal account'
   }
 }
 

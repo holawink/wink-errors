@@ -114,6 +114,10 @@ const errors = {
   PENDING_IDENTITY_INFO: {
     code: 'general-25',
     message: 'Necesita completar datos de identidad de registro.'
+  },
+  SINPE_REF_REQUIRED: {
+    code: 'general-26',
+    message: 'Sinpe Reference is required'
   }
 }
 

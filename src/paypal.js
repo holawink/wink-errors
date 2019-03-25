@@ -10,6 +10,14 @@ const errors = {
   INVALID_PAYPAL_ACCOUNT: {
     code: 'paypal-3',
     message: 'Invalid paypal account'
+  },
+  INVALID_PAYPAL_ACCOUNT_COUNTRY: {
+    code: 'paypal-4',
+    message: 'Invalid paypal account country'
+  },
+  INVALID_PAYPAL_ACCOUNT_NAME: {
+    code: 'paypal-5',
+    message: 'Your id name does not match with paypal account name'
   }
 }
 

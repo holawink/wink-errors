@@ -11,4 +11,3 @@ const errors = {
 };
 
 exports.default = errors;
-//# sourceMappingURL=preRegister.js.map

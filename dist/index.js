@@ -99,4 +99,3 @@ module.exports = {
   buildErrorResponse,
   errorCodes
 };
-//# sourceMappingURL=index.js.map

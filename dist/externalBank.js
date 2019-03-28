@@ -518,4 +518,3 @@ const externalErrors = {
 };
 
 exports.default = externalErrors;
-//# sourceMappingURL=externalBank.js.map

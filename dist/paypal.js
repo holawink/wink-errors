@@ -27,4 +27,3 @@ const errors = {
 };
 
 exports.default = errors;
-//# sourceMappingURL=paypal.js.map

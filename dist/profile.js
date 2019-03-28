@@ -21,4 +21,3 @@ const errors = {
 };
 
 exports.default = errors;
-//# sourceMappingURL=profile.js.map

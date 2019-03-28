@@ -1,1 +1,0 @@
-{"version":3,"sources":["../src/account.js"],"names":["errors","ALREADY_SAVED","code","message"],"mappings":";;;;;AAAA,MAAMA,SAAS;AACbC,iBAAe;AACbC,UAAM,WADO;AAEbC,aAAS;AAFI;AADF,CAAf;;kBAOeH,M","file":"account.js","sourcesContent":["const errors = {\n  ALREADY_SAVED: {\n    code: 'account-1',\n    message: 'Account already saved'\n  }\n}\n\nexport default errors\n"]}

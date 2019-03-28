@@ -16,4 +16,3 @@ const errors = {
 };
 
 exports.default = errors;
-//# sourceMappingURL=servicePayments.js.map

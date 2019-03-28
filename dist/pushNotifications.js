@@ -15,4 +15,3 @@ const errors = {
 };
 
 exports.default = errors;
-//# sourceMappingURL=pushNotifications.js.map

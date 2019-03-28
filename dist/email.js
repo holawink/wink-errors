@@ -19,4 +19,3 @@ const errors = {
 };
 
 exports.default = errors;
-//# sourceMappingURL=email.js.map

@@ -23,4 +23,3 @@ const errors = {
 };
 
 exports.default = errors;
-//# sourceMappingURL=reloadMoney.js.map

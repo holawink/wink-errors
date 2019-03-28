@@ -52,6 +52,10 @@ var _email = require('./email');
 
 var _email2 = _interopRequireDefault(_email);
 
+var _paypal = require('./paypal');
+
+var _paypal2 = _interopRequireDefault(_paypal);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 const errorCodes = {
@@ -67,7 +71,8 @@ const errorCodes = {
   servicePayments: _servicePayments2.default,
   pushNotifications: _pushNotifications2.default,
   external: _externalBank2.default,
-  email: _email2.default
+  email: _email2.default,
+  paypal: _paypal2.default
 };
 
 const buildErrorResponse = (error = {}, description, originalError) => {

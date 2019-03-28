@@ -104,9 +104,21 @@ const errors = {
     code: 'general-21',
     message: 'Maximum amount exceeded'
   },
+  UNEXPECTED_DB_ERROR: {
+    code: 'general-22',
+    message: 'Unexpected db error'
+  },
   SIGNUP_CLOSE: {
     code: 'En este momento no podemos registrar tu correo. Estamos dándole mantenimiento a la app, por favor intentá nuevamente a partir del Miercoles 3 de Mayo.',
     message: '¡OOOOPS! En este momento no podemos registrar tu correo. Estamos dándole mantenimiento a la app, por favor intentá nuevamente a partir del Martes 24 de Abril.'
+  },
+  INVALID_EMAIL: {
+    code: 'general-24',
+    message: 'El formato del email no es válido.'
+  },
+  PENDING_IDENTITY_INFO: {
+    code: 'general-25',
+    message: 'Necesita completar datos de identidad de registro.'
   }
 };
 

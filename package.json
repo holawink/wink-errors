@@ -5,8 +5,8 @@
   "license": "MIT",
   "scripts": {
     "test": "nyc mocha --compilers js:babel-core/register -t 5000 --watch",
-    "build": "babel src -d dist --source-maps --plugins transform-object-rest-spread",
-    "watch": "babel --watch src -d dist --source-maps --plugins transform-object-rest-spread",
+    "build": "node_modules/.bin/babel src -d dist --source-maps --plugins transform-object-rest-spread",
+    "watch": "node_modules/.bin/babel --watch src -d dist --source-maps --plugins transform-object-rest-spread",
     "postinstall": "npm run build",
     "toJSON": "babel-node ./debug/index"
   },

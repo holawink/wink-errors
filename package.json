@@ -1,13 +1,13 @@
 {
   "name": "wink-errors",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "main": "dist/index.js",
   "license": "MIT",
   "scripts": {
     "test": "nyc mocha --compilers js:babel-core/register -t 5000 --watch",
-    "build": "node_modules/.bin/babel src -d dist --plugins transform-object-rest-spread",
+    "rebuild": "node_modules/.bin/babel src -d dist --plugins transform-object-rest-spread",
     "watch": "node_modules/.bin/babel --watch src -d dist --plugins transform-object-rest-spread",
-    "postinstall": "npm run build",
+    "postinstall": "npm run rebuild",
     "toJSON": "babel-node ./debug/index"
   },
   "devDependencies": {

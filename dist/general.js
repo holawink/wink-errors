@@ -123,6 +123,10 @@ const errors = {
   SINPE_REF_REQUIRED: {
     code: 'general-26',
     message: 'Sinpe Reference is required'
+  },
+  OTP_NOT_DEFINED: {
+    code: 'general-27',
+    message: 'OTP is not defined'
   }
 };
 

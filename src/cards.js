@@ -13,4 +13,4 @@ const errors = {
   }
 }
 
-export default errors;
+export default errors

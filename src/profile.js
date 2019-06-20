@@ -9,10 +9,10 @@ const errors = {
     code: 'profile-2',
     message: 'Current pin does not match'
   },
-  PRODUCT_NOT_CONFIGURED:{
+  PRODUCT_NOT_CONFIGURED: {
     code: 'profile-3',
     message: 'Product does not exist for this client'
   }
 }
 
-export default errors;
+export default errors

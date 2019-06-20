@@ -96,7 +96,8 @@ const errors = {
     code: 'security-23',
     message: 'Invalid current password'
   },
-  NOT_VALID_PENDING_REQUEST: { // TODO: There are several of cases for this same error, create one for each
+  NOT_VALID_PENDING_REQUEST: {
+    // TODO: There are several of cases for this same error, create one for each
     code: 'security-24',
     message: 'Invalid request for pending change'
   },

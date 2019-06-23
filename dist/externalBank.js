@@ -155,7 +155,7 @@ const internalErrors = {
 };
 
 const externalErrors = {
-  'DEFAULT': {
+  DEFAULT: {
     description: 'Error desconocido en el sistema externo',
     error: internalErrors.UNEXPECTED_ERROR
   },

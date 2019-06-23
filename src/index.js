@@ -37,13 +37,19 @@ const buildErrorResponse = (error = {}, description, originalError) => {
   console.log(originalError)
   let customError = new Error()
   if (error.mainError) {
-    customError.message = error.mainError.message || external.DEFAULT.error.message || ''
+    customError.message =
+      error.mainError.message || external.DEFAULT.error.message || ''
     customError.httpStatus = error.mainError.httpStatus || 409
     customError.code = error.mainError.code || external.DEFAULT.error.code || ''
-    customError.description = description || error.mainError.description || external.DEFAULT.description || ''
+    customError.description =
+      description ||
+      error.mainError.description ||
+      external.DEFAULT.description ||
+      ''
   } else {
     customError.message = error.message || general.INTERNAL_ERROR.message || ''
-    customError.httpStatus = error.httpStatus || general.INTERNAL_ERROR.httpStatus || 409
+    customError.httpStatus =
+      error.httpStatus || general.INTERNAL_ERROR.httpStatus || 409
     customError.code = error.code || general.INTERNAL_ERROR.code || ''
     customError.description = description || ''
   }

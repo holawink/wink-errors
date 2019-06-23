@@ -16,7 +16,8 @@ const errors = {
     httpStatus: 500,
     message: 'Internal error'
   },
-  CLIENT_NOT_FOUND: { // client, client_detail
+  CLIENT_NOT_FOUND: {
+    // client, client_detail
     code: 'general-3',
     httpStatus: 404,
     message: 'Client not found'
@@ -26,12 +27,14 @@ const errors = {
     httpStatus: 404,
     message: 'Profile not found'
   },
-  ACCOUNT_NOT_FOUND: { // debit_account
+  ACCOUNT_NOT_FOUND: {
+    // debit_account
     code: 'general-5',
     httpStatus: 404,
     message: 'Account not found'
   },
-  BANK_ACCOUNT_NOT_FOUND: { // when externalBankAPI.localPayments.getAccountInfo is not found
+  BANK_ACCOUNT_NOT_FOUND: {
+    // when externalBankAPI.localPayments.getAccountInfo is not found
     code: 'general-6',
     httpStatus: 404,
     message: 'Bank Account not found'
@@ -74,7 +77,8 @@ const errors = {
     code: 'general-15',
     message: 'Unable to get code from microservice error'
   },
-  BANK_ACCOUNTS_NOT_FOUND: { // when externalBankAPI.getAccounts returns empty array
+  BANK_ACCOUNTS_NOT_FOUND: {
+    // when externalBankAPI.getAccounts returns empty array
     code: 'general-16',
     httpStatus: 404,
     message: 'No accounts found'
@@ -104,8 +108,10 @@ const errors = {
     message: 'Unexpected db error'
   },
   SIGNUP_CLOSE: {
-    code: 'En este momento no podemos registrar tu correo. Estamos dándole mantenimiento a la app, por favor intentá nuevamente a partir del Miercoles 3 de Mayo.',
-    message: '¡OOOOPS! En este momento no podemos registrar tu correo. Estamos dándole mantenimiento a la app, por favor intentá nuevamente a partir del Martes 24 de Abril.'
+    code:
+      'En este momento no podemos registrar tu correo. Estamos dándole mantenimiento a la app, por favor intentá nuevamente a partir del Miercoles 3 de Mayo.',
+    message:
+      '¡OOOOPS! En este momento no podemos registrar tu correo. Estamos dándole mantenimiento a la app, por favor intentá nuevamente a partir del Martes 24 de Abril.'
   },
   INVALID_EMAIL: {
     code: 'general-24',

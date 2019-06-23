@@ -35,7 +35,6 @@ const errors = {
     code: 'paypal-9',
     message: 'PayPal internal error'
   }
-
 }
 
 export default errors

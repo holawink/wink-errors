@@ -14,6 +14,10 @@ const errors = {
   SAVINGS_BLOCKED: {
     code: 'envelopes-4',
     message: 'You are not allowed to reload funds'
+  },
+  PROJECTED_AMOUNT_EXCEEDED: {
+    code: 'envelopes-5',
+    message: 'Amount exceeds projected amount'
   }
 }
 

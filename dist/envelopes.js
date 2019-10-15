@@ -23,6 +23,10 @@ const errors = {
   PROJECTED_AMOUNT_EXCEEDED: {
     code: 'envelopes-5',
     message: 'Amount exceeds projected amount'
+  },
+  EXTRACT_TOTAL_AMOUNT: {
+    code: 'envelope-6',
+    message: 'Close the envelope if extracting the full current amount'
   }
 };
 

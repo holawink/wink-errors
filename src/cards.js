@@ -10,6 +10,10 @@ const errors = {
   PENDING_REQUEST_CARD: {
     code: 'cards-3',
     message: 'Pending previous card replacement'
+  },
+  CLIENT_WITHOUT_CREDIT_CARD: {
+    code: 'cards-4',
+    message: 'Client does not have a credit card registered'
   }
 }
 

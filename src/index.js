@@ -12,6 +12,7 @@ import pushNotifications from './pushNotifications'
 import external from './externalBank'
 import email from './email'
 import paypal from './paypal'
+import creditAccount from './creditAccount'
 
 const errorCodes = {
   general,
@@ -27,7 +28,8 @@ const errorCodes = {
   pushNotifications,
   external,
   email,
-  paypal
+  paypal,
+  creditAccount
 }
 
 const buildErrorResponse = (error = {}, description, originalError) => {

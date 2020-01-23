@@ -18,6 +18,10 @@ const errors = {
   CREDIT_CARD_NOT_FOUND:{
     code: 'creditAccount-5',
     message: 'No credit card found for this user'
+  },
+  ERROR_REQUEST_CASH_ADVANCE:{
+    code: 'creditAccount-6',
+    message: 'There was an error while trying to request the cash advance'
   }
 }
 

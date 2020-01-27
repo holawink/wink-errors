@@ -22,6 +22,10 @@ const errors = {
   EXTRACT_TOTAL_AMOUNT: {
     code: 'envelope-6',
     message: 'Close the envelope if extracting the full current amount'
+  },
+  FUNDS_RETURNED_FAILED: {
+    code: 'envelope-7',
+    message: 'Error, funds couldn\'t be returned'
   }
 }
 

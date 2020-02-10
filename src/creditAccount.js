@@ -18,6 +18,18 @@ const errors = {
   CREDIT_CARD_NOT_FOUND:{
     code: 'creditAccount-5',
     message: 'No credit card found for this user'
+  },
+  CREDIT_CARD_PAYMENT_FAILURE:{
+    code: 'creditAccount-6',
+    message: 'An error happened while trying to pay the credit card'
+  },
+  CREDIT_CARD_CHANGING_STATUS_FAILURE:{
+    code: 'creditAccount-7',
+    message: 'An error happened while trying to change the credit card status'
+  },
+  CREDIT_CARD_REQUEST_REPLACEMENT_ERROR:{
+    code: 'creditAccount-8',
+    message: 'An error happened while trying to request a replacement of the credit card'
   }
 }
 

@@ -35,6 +35,10 @@ const errors = {
   CREDIT_CARD_REQUEST_REPLACEMENT_ERROR:{
     code: 'creditAccount-8',
     message: 'An error happened while trying to request a replacement of the credit card'
+  },
+  REQUEST_AUTHORIZATION_ERROR:{
+    code: 'creditAccount-9',
+    message: 'An error happened while requesting for authorization document'
   }
 };
 

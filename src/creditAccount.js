@@ -34,6 +34,10 @@ const errors = {
   REQUEST_AUTHORIZATION_ERROR:{
     code: 'creditAccount-9',
     message: 'An error happened while requesting for authorization document'
+  },
+  USER_CREDIT_REQUEST:{
+    code: 'creditAccount-10',
+    message: 'An error happened while requesting for user credit'
   }
 }
 

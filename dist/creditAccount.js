@@ -43,6 +43,10 @@ const errors = {
   USER_CREDIT_REQUEST:{
     code: 'creditAccount-10',
     message: 'An error happened while requesting for user credit'
+  },
+  ERROR_MESA_REQUEST:{
+    code: 'creditAccount-11',
+    message: 'An error happened while asking for MESA approval'
   }
 };
 

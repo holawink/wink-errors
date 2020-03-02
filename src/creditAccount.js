@@ -42,6 +42,14 @@ const errors = {
   ERROR_MESA_REQUEST:{
     code: 'creditAccount-11',
     message: 'An error happened while asking for MESA approval'
+  },
+  ERROR_CLIENT_AFFILIATION:{
+    code: 'creditAccount-12',
+    message: 'An error happened while request the affiliation'
+  },
+  ERROR_CREATING_CREDIT_PROFILE:{
+    code: 'creditAccount-13',
+    message: 'An error happened while creating the credit profile'
   }
 }
 

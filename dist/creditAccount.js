@@ -50,7 +50,7 @@ const errors = {
   },
   ERROR_CLIENT_AFFILIATION:{
     code: 'creditAccount-12',
-    message: 'An error happened while request the affiliation'
+    message: 'An error happened while requesting the affiliation'
   },
   ERROR_CREATING_CREDIT_PROFILE:{
     code: 'creditAccount-13',

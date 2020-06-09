@@ -26,6 +26,10 @@ const errors = {
   FUNDS_RETURNED_FAILED: {
     code: 'envelope-7',
     message: 'Error, funds couldn\'t be returned'
+  },
+  INCORRECT_AMOUNT: {
+    code: 'envelope-8',
+    message: 'Please enter a valid amount'
   }
 }
 

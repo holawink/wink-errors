@@ -19,6 +19,10 @@ const errors = {
   CLIENT_WITHOUT_CREDIT_CARD: {
     code: 'cards-4',
     message: 'Client does not have a credit card registered'
+  },
+  CARD_PIN_NOT_SET: {
+    code: 'cards-6',
+    message: 'Card pin not established'
   }
 };
 

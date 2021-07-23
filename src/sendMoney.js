@@ -14,6 +14,10 @@ const errors = {
   SEND_BLOCKED: {
     code: 'sendMoney-4',
     message: 'You are not allowed to send funds'
+  },
+  DESTINATION_DONT_ALLOW_THE_TRX: {
+    code: 'sendMoney-5',
+    message: 'THE DESTINATION DONT ALLOW THE TRANSACCTION'
   }
 }
 

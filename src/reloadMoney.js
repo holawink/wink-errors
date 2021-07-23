@@ -14,6 +14,10 @@ const errors = {
   RELOAD_BLOCKED: {
     code: 'reload-4',
     message: 'You are not allowed to reload funds'
+  },
+  DESTINATION_DONT_ALLOW_THE_TRX: {
+    code: 'reload-5',
+    message: 'THE DESTINATION DONT ALLOW THE TRANSACCTION'
   }
 }
 

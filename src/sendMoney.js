@@ -18,6 +18,10 @@ const errors = {
   DESTINATION_DONT_ALLOW_THE_TRX: {
     code: 'sendMoney-5',
     message: 'THE DESTINATION DONT ALLOW THE TRANSACCTION'
+  },
+  TRANSACTION_IN_PORGRESS_OR_PROCESSED: {
+    code: 'sendMoney-5',
+    message: 'Transaction in progress or processed'
   }
 }
 

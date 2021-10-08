@@ -20,7 +20,7 @@ const errors = {
     message: 'THE DESTINATION DONT ALLOW THE TRANSACCTION'
   },
   TRANSACTION_IN_PORGRESS_OR_PROCESSED: {
-    code: 'sendMoney-5',
+    code: 'sendMoney-6',
     message: 'Transaction in progress or processed'
   }
 }

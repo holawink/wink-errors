@@ -34,7 +34,11 @@ const errors = {
   INTERNAL_SERVICE_ERROR: {
     code: 'paypal-9',
     message: 'PayPal internal error'
-  }
+  },
+  UNAUTHORIZED_COUNTRY: {
+    code: 'paypal-10',
+    message: 'Paypal Country is Unauthorized'
+  }, 
 }
 
 export default errors

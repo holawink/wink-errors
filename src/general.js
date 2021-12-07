@@ -128,6 +128,13 @@ const errors = {
   OTP_NOT_DEFINED: {
     code: 'general-27',
     message: 'OTP is not defined'
+  },
+  ROUTE_NOT_FOUND: {
+    message:
+      'Actualiza la APP para que podas continuar con tu experiencia Wink',
+    code: 'Actualiza la APP para que podas continuar con tu experiencia Wink',
+    description: 'Route or resource not found',
+    httpStatus: 404
   }
 }
 

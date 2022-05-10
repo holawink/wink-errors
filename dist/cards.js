@@ -23,6 +23,10 @@ const errors = {
   CARD_PIN_NOT_SET: {
     code: 'cards-6',
     message: 'Card pin not established'
+  },
+  CARD_NOT_FOUND: {
+    code: 'cards-7',
+    message: 'The card could not be found, due to some server error'
   }
 };
 

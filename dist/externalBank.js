@@ -185,7 +185,7 @@ const externalErrors = {
   },
   '7': {
     description: 'Usuario no autorizado para ejecutar la función solicitada',
-    error: internalErrors.UNEXPECTED_ERROR
+    error: internalErrors.ACCESS_DENIED
   },
   '8': {
     description: 'Número de identificación inválido',

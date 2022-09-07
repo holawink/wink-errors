@@ -203,6 +203,10 @@ const externalErrors = {
     description: 'El tipo de tarjeta {0} es inválido',
     error: internalErrors.UNEXPECTED_ERROR
   },
+  '14': {
+    description: 'Identificación Invalida',
+    error: internalErrors.INVALID_IDENTITY_NUMBER
+  },
   '23': {
     description: 'Fondos insuficientes para procesar la transacción',
     error: internalErrors.INSUFFICIENT_FUNDS

@@ -199,6 +199,10 @@ const externalErrors = {
     description: 'El tipo de tarjeta {0} es inválido',
     error: internalErrors.UNEXPECTED_ERROR
   },
+  '14': {
+    description: 'Identificación Invalida',
+    error: internalErrors.INVALID_IDENTITY_NUMBER
+  },
   '23': {
     description: 'Fondos insuficientes para procesar la transacción',
     error: internalErrors.INSUFFICIENT_FUNDS
@@ -386,6 +390,10 @@ const externalErrors = {
   '8003': {
     description: 'No se encontraron pagos pendientes.',
     error: internalErrors.NOT_PENDING_INVOICES
+  },
+  '9006': {
+    description: 'Identificación del cliente destino no coincide con la registrada en la entidad.',
+    error: internalErrors.IDENTITY_AND_ACCOUNT_MISMATCH
   },
   '9020': {
     description: 'Monto no autorizado',

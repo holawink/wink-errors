@@ -27,7 +27,11 @@ const errors = {
   TRANSACTION_IN_PORGRESS_OR_PROCESSED: {
     code: 'sendMoney-6',
     message: 'Transaction in progress or processed'
-  }
+  },
+  FAILED_TRANSACTION_TO_EXTERNAL_BANK: {
+    code: 'sendMoney-7',
+    message: 'It was not possible to register the transaction to the account of the client because a problem occurred'
+  },
 };
 
 exports.default = errors;

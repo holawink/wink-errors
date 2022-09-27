@@ -30,7 +30,7 @@ const errors = {
   },
   FUNDS_RETURNED_FAILED: {
     code: 'envelope-7',
-    message: 'Error, funds couldn\'t be returned'
+    message: "Error, funds couldn't be returned"
   }
 };
 

@@ -408,7 +408,8 @@ const externalErrors = {
     error: internalErrors.NOT_PENDING_INVOICES
   },
   '9006': {
-    description: 'Identificación del cliente destino no coincide con la registrada en la entidad.',
+    description:
+      'Identificación del cliente destino no coincide con la registrada en la entidad.',
     error: internalErrors.IDENTITY_AND_ACCOUNT_MISMATCH
   },
   '9020': {

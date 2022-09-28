@@ -38,7 +38,7 @@ const errors = {
   UNAUTHORIZED_COUNTRY: {
     code: 'paypal-10',
     message: 'Paypal Country is Unauthorized'
-  }, 
+  }
 }
 
 export default errors

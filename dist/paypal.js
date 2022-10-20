@@ -43,6 +43,10 @@ const errors = {
   UNAUTHORIZED_COUNTRY: {
     code: 'paypal-10',
     message: 'Paypal Country is Unauthorized'
+  },
+  FUNDING_INSTRUMENTS_UNAVAILABLE: {
+    code: 'paypal-11',
+    message: 'PayPal internal error'
   }
 };
 

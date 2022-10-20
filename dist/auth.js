@@ -132,7 +132,7 @@ const errors = {
   INVALID_PHONE: {
     code: 'security-32',
     message: 'Phone number is invalid'
-  },
+  }
 };
 
 exports.default = errors;

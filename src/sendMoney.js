@@ -28,7 +28,7 @@ const errors = {
     message:
       'It was not possible to register the transaction to the account of the client because a problem occurred'
   },
-  INVALIDA_ACCOUNT_NUMBER: {
+  INVALID_ACCOUNT_NUMBER: {
     code: 'sendMoney-8',
     message: 'Invalida account number'
   }

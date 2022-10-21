@@ -31,6 +31,10 @@ const errors = {
   FAILED_TRANSACTION_TO_EXTERNAL_BANK: {
     code: 'sendMoney-7',
     message: 'It was not possible to register the transaction to the account of the client because a problem occurred'
+  },
+  INVALID_ACCOUNT_NUMBER: {
+    code: 'sendMoney-8',
+    message: 'Invalid account number'
   }
 };
 

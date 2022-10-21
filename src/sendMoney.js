@@ -30,7 +30,7 @@ const errors = {
   },
   INVALID_ACCOUNT_NUMBER: {
     code: 'sendMoney-8',
-    message: 'Invalida account number'
+    message: 'Invalid account number'
   }
 }
 

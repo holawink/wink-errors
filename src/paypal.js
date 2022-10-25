@@ -45,7 +45,7 @@ const errors = {
   },
   INVALID_REFRESH_TOKEN: {
     code: 'paypal-12',
-    message: 'Refresh Token is invalid'
+    message: 'Refresh token is invalid'
   }
 }
 

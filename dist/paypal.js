@@ -47,7 +47,11 @@ const errors = {
   FUNDING_INSTRUMENTS_UNAVAILABLE: {
     code: 'paypal-11',
     message: 'PayPal internal error'
+  },
+  INVALID_REFRESH_TOKEN: {
+    code: 'paypal-12',
+    message: 'Refresh Token is invalid'
   }
-};
+}
 
-exports.default = errors;
+exports.default = errors

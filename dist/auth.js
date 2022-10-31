@@ -128,6 +128,10 @@ const errors = {
   PENDING_CONFIRM_PHONE: {
     code: 'security-31',
     message: 'Please confirm phone'
+  },
+  INVALID_PHONE: {
+    code: 'security-32',
+    message: 'Phone number is invalid'
   }
 };
 

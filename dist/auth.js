@@ -132,6 +132,10 @@ const errors = {
   INVALID_PHONE: {
     code: 'security-32',
     message: 'Phone number is invalid'
+  },
+  USER_BLOCKED: {
+    code: 'security-33',
+    message: 'The user is blocked'
   }
 };
 

@@ -136,6 +136,22 @@ const errors = {
   USER_BLOCKED: {
     code: 'security-33',
     message: 'The user is blocked'
+  },
+  ACCOUNT_IN_REVIEW: {
+    code: 'security-34',
+    message: 'Your information is in review'
+  },
+  ACCOUNT_PENDING_INFORMATION: {
+    code: 'security-35',
+    message: 'There are pending information from your side'
+  },
+  ACCOUNT_DENIED: {
+    code: 'security-36',
+    message: 'Your account has been denied'
+  },
+  ACCOUNT_DEACTIVATED: {
+    code: 'security-37',
+    message: 'Your account has been deactivated'
   }
 };
 

@@ -52,6 +52,6 @@ const errors = {
     code: 'paypal-12',
     message: 'Refresh token is invalid'
   }
-}
+};
 
-exports.default = errors
+exports.default = errors;

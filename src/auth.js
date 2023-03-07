@@ -147,6 +147,10 @@ const errors = {
   ACCOUNT_DEACTIVATED: {
     code: 'security-37',
     message: 'Your account has been deactivated'
+  },
+  EXPIRED_CODE: {
+    code: 'security-38',
+    message: 'Expired code'
   }
 }
 

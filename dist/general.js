@@ -132,6 +132,10 @@ const errors = {
     code: 'general-27',
     message: 'OTP is not defined'
   },
+  SERVICE_CONNECTION_ERROR: {
+    code: 'general-28',
+    message: 'Service connection error'
+  },
   ROUTE_NOT_FOUND: {
     message: 'Actualiza la APP para que podas continuar con tu experiencia Wink',
     code: 'Actualiza la APP para que podas continuar con tu experiencia Wink',

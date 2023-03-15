@@ -156,6 +156,10 @@ const errors = {
   EXPIRED_CODE: {
     code: 'security-38',
     message: 'Expired code'
+  },
+  INVALID_IDENTIFICATION_FORMAT: {
+    code: 'security-39',
+    message: 'Invalid identification format'
   }
 };
 

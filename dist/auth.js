@@ -160,6 +160,10 @@ const errors = {
   INVALID_IDENTIFICATION_FORMAT: {
     code: 'security-39',
     message: 'Invalid identification format'
+  },
+  MAX_CHECK_ATTEMPTS_REACHED: {
+    code: 'security-40',
+    message: 'Max check attempts reached'
   }
 };
 

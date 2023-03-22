@@ -159,6 +159,10 @@ const errors = {
   MAX_CHECK_ATTEMPTS_REACHED: {
     code: 'security-40',
     message: 'Max check attempts reached'
+  },
+  MAX_SEND_ATTEMPTS_REACHED: {
+    code: 'security-41',
+    message: 'Max send attempts reached'
   }
 }
 

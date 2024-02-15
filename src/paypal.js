@@ -48,7 +48,7 @@ const errors = {
     message: 'Refresh token is invalid'
   },
   SEND_MONEY_TO_EXTERNAL_ACCOUNT_ERROR: {
-    code: 'paypal-13',
+    code: 'paypal-14',
     message:
       'Error trying to send paypal withdrawal money to an external account'
   }

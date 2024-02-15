@@ -55,6 +55,10 @@ const errors = {
   SEND_MONEY_TO_EXTERNAL_ACCOUNT_ERROR: {
     code: 'paypal-14',
     message: 'Error trying to send paypal withdrawal money to an external account'
+  },
+  INSUFFICIENT_PAYPAL_WITHDRAWAL_FOR_EXTERNAL_TRANSFER: {
+    code: 'paypal-15',
+    message: 'Unable to process external account transfer fee. The withdrawal amount from PayPal is insufficient to cover the transfer fee.'
   }
 };
 

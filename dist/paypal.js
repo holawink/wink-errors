@@ -54,8 +54,7 @@ const errors = {
   },
   SEND_MONEY_TO_EXTERNAL_ACCOUNT_ERROR: {
     code: 'paypal-13',
-    message:
-      'Error trying to send paypal withdrawal money to an external account'
+    message: 'Error trying to send paypal withdrawal money to an external account'
   }
 };
 

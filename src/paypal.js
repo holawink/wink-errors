@@ -46,6 +46,10 @@ const errors = {
   INVALID_REFRESH_TOKEN: {
     code: 'paypal-12',
     message: 'Refresh token is invalid'
+  },
+  MAXIMUM_AMOUNT_LIMIT_PER_DAY_EXCEEDED: {
+    code: 'paypal-13',
+    message: 'Maximum amount limit per day exceeded'
   }
 }
 

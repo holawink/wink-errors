@@ -52,6 +52,10 @@ const errors = {
     code: 'paypal-12',
     message: 'Refresh token is invalid'
   },
+  MAXIMUM_AMOUNT_LIMIT_PER_DAY_EXCEEDED: {
+    code: 'paypal-13',
+    message: 'Maximum amount limit per day exceeded'
+  },
   SEND_MONEY_TO_EXTERNAL_ACCOUNT_ERROR: {
     code: 'paypal-14',
     message: 'Error trying to send paypal withdrawal money to an external account'

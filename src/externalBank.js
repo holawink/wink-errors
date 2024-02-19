@@ -155,7 +155,7 @@ const internalErrors = {
   },
   BLOCKED_CLIENT_ACCOUNT: {
     code: 'external-38',
-    message: 'The customer`s account is blocked by the issuer'
+    message: "The customer's account is blocked by the issuer"
   }
 }
 

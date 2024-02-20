@@ -151,6 +151,10 @@ const internalErrors = {
   INVALID_BLOCK_MONEY: {
     code: 'external-37',
     message: 'Invalid block number'
+  },
+  BLOCKED_CLIENT_ACCOUNT: {
+    code: 'external-38',
+    message: "The customer's account is blocked by the issuer"
   }
 };
 
@@ -394,6 +398,10 @@ const externalErrors = {
   '9006': {
     description: 'Identificación del cliente destino no coincide con la registrada en la entidad.',
     error: internalErrors.IDENTITY_AND_ACCOUNT_MISMATCH
+  },
+  '9005': {
+    description: 'Cuenta Cliente bloqueada.',
+    error: internalErrors.BLOCKED_CLIENT_ACCOUNT
   },
   '9020': {
     description: 'Monto no autorizado',

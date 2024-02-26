@@ -1142,12 +1142,10 @@ babel-plugin-transform-regenerator@^6.22.0:
   dependencies:
     regenerator-transform "^0.10.0"
 
-babel-plugin-transform-runtime@^6.23.0:
-  version "6.23.0"
-  resolved "https://registry.yarnpkg.com/babel-plugin-transform-runtime/-/babel-plugin-transform-runtime-6.23.0.tgz#88490d446502ea9b8e7efb0fe09ec4d99479b1ee"
-  integrity sha512-cpGMVC1vt/772y3jx1gwSaTitQVZuFDlllgreMsZ+rTYC6jlYXRyf5FQOgSnckOiA5QmzbXTyBY2A5AmZXF1fA==
-  dependencies:
-    babel-runtime "^6.22.0"
+babel-plugin-transform-runtime@^6.26.0:
+  version "7.0.0-alpha.1"
+  resolved "https://registry.yarnpkg.com/babel-plugin-transform-runtime/-/babel-plugin-transform-runtime-7.0.0-alpha.1.tgz#57780049a1d81053d94b83bf9e96d36840723c31"
+  integrity sha512-SRAmYYUCReRrFnD8KR1lhViC3yBP3+gOMgUXpkhfLl0rffL/n5s/R+1mBc9n6/cvoSMbjLbjSg1i/POsNN8JNw==
 
 babel-plugin-transform-strict-mode@^6.24.1:
   version "6.24.1"

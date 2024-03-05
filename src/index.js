@@ -10,6 +10,7 @@ import sendMoney from './sendMoney'
 import servicePayments from './servicePayments'
 import pushNotifications from './pushNotifications'
 import external from './externalBank'
+import internal from './internalBank'
 import email from './email'
 import paypal from './paypal'
 import creditAccount from './creditAccount'
@@ -27,6 +28,7 @@ const errorCodes = {
   servicePayments,
   pushNotifications,
   external,
+  internal,
   email,
   paypal,
   creditAccount

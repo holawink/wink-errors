@@ -249,7 +249,7 @@ const externalErrors = {
   },
   '9003': {
     description: 'Cuenta del cliente destino cerrada',
-    error: _internalBank2.default.CLOSED_CUSTOMER_ACCOUNT
+    error: _internalBank2.default.CLOSED_CLIENT_ACCOUNT
   },
   '9006': {
     description: 'Identificación del cliente destino no coincide con la registrada en la entidad.',

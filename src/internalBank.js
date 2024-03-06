@@ -157,9 +157,9 @@ const internalErrors = {
     code: 'external-38',
     message: "The customer's account is blocked by the issuer"
   },
-  CLOSED_CUSTOMER_ACCOUNT: {
+  CLOSED_CLIENT_ACCOUNT: {
     code: 'external-39',
-    message: "Destination client account is closed"
+    message: "Destination customer's account is closed"
   }
 }
 

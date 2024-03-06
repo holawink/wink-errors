@@ -255,7 +255,7 @@ const externalErrors = {
   '9003': {
     description:
       'Cuenta del cliente destino cerrada',
-    error: internalErrors.CLOSED_CUSTOMER_ACCOUNT
+    error: internalErrors.CLOSED_CLIENT_ACCOUNT
   },
   '9006': {
     description:

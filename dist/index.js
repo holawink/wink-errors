@@ -48,6 +48,10 @@ var _externalBank = require('./externalBank');
 
 var _externalBank2 = _interopRequireDefault(_externalBank);
 
+var _internalBank = require('./internalBank');
+
+var _internalBank2 = _interopRequireDefault(_internalBank);
+
 var _email = require('./email');
 
 var _email2 = _interopRequireDefault(_email);
@@ -75,6 +79,7 @@ const errorCodes = {
   servicePayments: _servicePayments2.default,
   pushNotifications: _pushNotifications2.default,
   external: _externalBank2.default,
+  internal: _internalBank2.default,
   email: _email2.default,
   paypal: _paypal2.default,
   creditAccount: _creditAccount2.default

@@ -26,6 +26,14 @@ const errors = {
   FUNDS_RETURNED_FAILED: {
     code: 'envelope-7',
     message: "Error, funds couldn't be returned"
+  },
+  TOTAL_FUNDS_RETURNED_FAILED: {
+    code: 'envelope-8',
+    message: "The total amount of the envelope could not be released"
+  },
+  FAILED_ENVELOPE_CREATION: {
+    code: 'envelope-9',
+    message: "We had an issue creating the savings envelope"
   }
 }
 

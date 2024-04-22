@@ -32,9 +32,9 @@ const errors = {
     code: 'sendMoney-8',
     message: 'Invalid account number'
   },
-  TRANSACTION_TO_INTERNAL_ACCOUNT_HAS_TIMED_OUT: {
+  INTERNAL_ACCOUNT_TRANSACTION_TIMEOUT: {
     code: 'sendMoney-9',
-    message: 'The transaction could not be completed due to connection timeout.'
+    message: 'Internal transaction failed due to connection timeout error.'
   }
 }
 

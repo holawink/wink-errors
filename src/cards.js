@@ -22,6 +22,10 @@ const errors = {
   CARD_NOT_FOUND: {
     code: 'cards-7',
     message: 'The card could not be found, due to some server error'
+  },
+  FAILED_REQUESTED_CARD: {
+    code: 'cards-8',
+    message: 'The card could not be requested'
   }
 }
 

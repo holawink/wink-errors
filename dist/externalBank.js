@@ -6,8 +6,6 @@ Object.defineProperty(exports, "__esModule", {
 
 var _internalBank = require('./internalBank');
 
-var _sendMoneyErrors = require('./sendMoney');
-
 var _internalBank2 = _interopRequireDefault(_internalBank);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -167,7 +165,7 @@ const externalErrors = {
   },
   '3041': {
     description: 'El número de cuenta indicado es inválido.',
-    error: _sendMoneyErrors.default.INVALID_ACCOUNT
+    error: _internalBank.default.INVALID_DESTINATION_ACCOUNT_NUMBER
   },
   '3044': {
     description: 'No fue posible debitar su cuenta {0} para efectuar el pago del servicio.',

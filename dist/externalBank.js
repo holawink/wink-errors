@@ -167,7 +167,7 @@ const externalErrors = {
   },
   '3041': {
     description: 'El número de cuenta indicado es inválido.',
-    error: _sendMoneyErrors.INVALID_ACCOUNT
+    error: _sendMoneyErrors.default.INVALID_ACCOUNT
   },
   '3044': {
     description: 'No fue posible debitar su cuenta {0} para efectuar el pago del servicio.',

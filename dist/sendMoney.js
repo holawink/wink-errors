@@ -39,6 +39,10 @@ const errors = {
   INTERNAL_ACCOUNT_TRANSACTION_TIMEOUT: {
     code: 'sendMoney-9',
     message: 'Internal transaction failed due to connection timeout error.'
+  },
+  SELF_TRANSFER_NOT_ALLOWED: {
+    code: 'sendMoney-10',
+    message: 'It was not possible to register the transaction because is a self transaction'
   }
 };
 

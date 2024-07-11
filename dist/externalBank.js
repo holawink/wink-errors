@@ -8,6 +8,10 @@ var _internalBank = require('./internalBank');
 
 var _internalBank2 = _interopRequireDefault(_internalBank);
 
+var _sendMoney = require('./sendMoney');
+
+var _sendMoney2 = _interopRequireDefault(_sendMoney);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 const externalErrors = {
@@ -162,6 +166,10 @@ const externalErrors = {
   '3036': {
     description: 'El número de bloqueo no existe',
     error: _internalBank2.default.INVALID_BLOCK_MONEY
+  },
+  '3041': {
+    description: 'El número de cuenta indicado es inválido',
+    error: _sendMoney2.default.SELF_TRANSFER_NOT_ALLOWED
   },
   '3044': {
     description: 'No fue posible debitar su cuenta {0} para efectuar el pago del servicio.',

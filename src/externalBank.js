@@ -1,4 +1,5 @@
 import internalErrors from './internalBank'
+import sendMoneyErrors from './sendMoney'
 
 const externalErrors = {
   DEFAULT: {
@@ -157,6 +158,10 @@ const externalErrors = {
   '3036': {
     description: 'El número de bloqueo no existe',
     error: internalErrors.INVALID_BLOCK_MONEY
+  },
+  '3041': {
+    description: 'El número de cuenta indicado es inválido',
+    error: sendMoneyErrors.SELF_TRANSFER_NOT_ALLOWED
   },
   '3044': {
     description:

@@ -163,10 +163,6 @@ const externalErrors = {
     description: 'El número de bloqueo no existe',
     error: _internalBank2.default.INVALID_BLOCK_MONEY
   },
-  '3041': {
-    description: 'El número de cuenta indicado es inválido.',
-    error: _internalBank.default.INVALID_DESTINATION_ACCOUNT_NUMBER
-  },
   '3044': {
     description: 'No fue posible debitar su cuenta {0} para efectuar el pago del servicio.',
     error: _internalBank2.default.UNEXPECTED_ERROR

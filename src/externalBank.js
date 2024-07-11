@@ -1,4 +1,5 @@
 import internalErrors from './internalBank'
+import sendMoneyErrors from './sendMoney'
 
 const externalErrors = {
   DEFAULT: {
@@ -160,7 +161,7 @@ const externalErrors = {
   },
   '3041': {
     description: 'El número de cuenta indicado es inválido.',
-    error: internalErrors.INVALID_DESTINATION_ACCOUNT_NUMBER
+    error: sendMoneyErrors.INVALID_ACCOUNT
   },
   '3044': {
     description:

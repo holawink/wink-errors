@@ -20,33 +20,33 @@ const errors = {
     code: 'reload-4',
     message: 'You are not allowed to reload funds'
   },
-  CLIENT_ACCOUNT_CLOSED: {
+  DESTINATION_DONT_ALLOW_THE_TRX: {
     code: 'reload-5',
+    message: 'The destination did not allow the transaction'
+  },
+  CLIENT_ACCOUNT_CLOSED: {
+    code: 'reload-6',
     message: 'Client account is closed'
   },
   CLIENT_ACCOUNT_NOT_FOUND: {
-    code: 'reload-6',
+    code: 'reload-7',
     message: 'Client account does not exist'
   },
   CLIENT_ACCOUNT_BLOCKED: {
-    code: 'reload-7',
+    code: 'reload-8',
     message: 'Client account is blocked'
   },
   IDENTITY_DOES_NOT_MATCH: {
-    code: 'reload-8',
+    code: 'reload-9',
     message: 'Identity does not match with destination'
   },
   DESTINATION_INSUFFICIENT_FUNDS: {
-    code: 'reload-9',
+    code: 'reload-10',
     message: 'Destination does not have enough funds'
   },
   CURRENCY_DOES_NOT_MATCH: {
-    code: 'reload-10',
-    message: 'Currency does not match'
-  },
-  DESTINATION_DONT_ALLOW_THE_TRX: {
     code: 'reload-11',
-    message: 'The destination did not allow the transaction'
+    message: 'Currency does not match'
   },
   CLIENT_NOT_AUTHORIZED: {
     code: 'reload-12',

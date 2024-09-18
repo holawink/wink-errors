@@ -15,73 +15,73 @@ const errors = {
     code: 'reload-4',
     message: 'You are not allowed to reload funds'
   },
-  DESTINATION_DONT_ALLOW_THE_TRX: {
-    code: 'reload-5',
-    message: 'The destination did not allow the transaction'
-  },
-  DESTINATION_INCORRECT_RESPONSE: {
-    code: 'reload-6',
-    message: 'The destination response is not correct'
-  },
   CLIENT_ACCOUNT_CLOSED: {
-    code: 'reload-7',
+    code: 'reload-5',
     message: 'Client account is closed'
   },
-  CLIENT_ACCOUNT_INSUFFICIENT_FUNDS: {
-    code: 'reload-8',
-    message: 'Client account does not have enough funds'
-  },
   CLIENT_ACCOUNT_NOT_FOUND: {
-    code: 'reload-9',
+    code: 'reload-6',
     message: 'Client account does not exist'
   },
   CLIENT_ACCOUNT_BLOCKED: {
-    code: 'reload-10',
+    code: 'reload-7',
     message: 'Client account is blocked'
   },
   IDENTITY_DOES_NOT_MATCH: {
-    code: 'reload-11',
+    code: 'reload-8',
     message: 'Identity does not match with destination'
   },
-  CLIENT_ACCOUNT_INCORRECT_NUMBER: {
-    code: 'reload-12',
-    message: 'Client account number is incorrect'
-  },
   DESTINATION_INSUFFICIENT_FUNDS: {
-    code: 'reload-13',
+    code: 'reload-9',
     message: 'Destination does not have enough funds'
   },
   CURRENCY_DOES_NOT_MATCH: {
-    code: 'reload-14',
+    code: 'reload-10',
     message: 'Currency does not match'
   },
+  DESTINATION_DONT_ALLOW_THE_TRX: {
+    code: 'reload-11',
+    message: 'The destination did not allow the transaction'
+  },
   CLIENT_NOT_AUTHORIZED: {
-    code: 'reload-15',
+    code: 'reload-12',
     message: 'Origin client is not authorized'
   },
   SERVICE_NOT_AUTHORIZED: {
-    code: 'reload-16',
+    code: 'reload-13',
     message: 'Service is not authorized'
   },
   DESTINATION_NOT_AVAILABLE: {
-    code: 'reload-17',
+    code: 'reload-14',
     message: 'Destination could not process the transaction'
+  },
+  CLIENT_ACCOUNT_INCORRECT_NUMBER: {
+    code: 'reload-15',
+    message: 'Client account number is incorrect'
+  },
+  CLIENT_ACCOUNT_INSUFFICIENT_FUNDS: {
+    code: 'reload-16',
+    message: 'Client account does not have enough funds'
+  },
+  PROCESSING_EXCEPTION: {
+    code: 'reload-17',
+    message: 'SINPE failed to process the transaction'
   },
   DESTINATION_TIMEOUT: {
     code: 'reload-18',
     message: 'Response time exceeded by destination'
   },
-  DESTINATION_EXCEPTION: {
+  DESTINATION_INCORRECT_RESPONSE: {
     code: 'reload-19',
+    message: 'The destination response is not correct'
+  },
+  DESTINATION_EXCEPTION: {
+    code: 'reload-20',
     message: 'Exception received by destination'
   },
   DESTINATION_MISCOMMUNICATION: {
-    code: 'reload-20',
-    message: 'Communication error with destination'
-  },
-  PROCESSING_EXCEPTION: {
     code: 'reload-21',
-    message: 'SINPE failed to process the transaction'
+    message: 'Communication error with destination'
   }
 }
 

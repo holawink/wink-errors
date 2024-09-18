@@ -60,28 +60,24 @@ const errors = {
     code: 'reload-14',
     message: 'Currency does not match'
   },
-  DESTINATION_BLOCKED_TRANSACTION: {
-    code: 'reload-15',
-    message: 'Destination did not authorize the transaction'
-  },
   CLIENT_NOT_AUTHORIZED: {
-    code: 'reload-16',
+    code: 'reload-15',
     message: 'Origin client is not authorized'
   },
   SERVICE_NOT_AUTHORIZED: {
-    code: 'reload-17',
+    code: 'reload-16',
     message: 'Service is not authorized'
   },
   DESTINATION_NOT_AVAILABLE: {
-    code: 'reload-18',
+    code: 'reload-17',
     message: 'Destination could not process the transaction'
   },
   DESTINATION_TIMEOUT: {
-    code: 'reload-19',
+    code: 'reload-18',
     message: 'Response time exceeded by destination'
   },
   DESTINATION_EXCEPTION: {
-    code: 'reload-20',
+    code: 'reload-19',
     message: 'Exception received by destination'
   },
   DESTINATION_MISCOMMUNICATION: {

@@ -29,11 +29,15 @@ const errors = {
   },
   TOTAL_FUNDS_RETURNED_FAILED: {
     code: 'envelope-8',
-    message: "The total amount of the envelope could not be released"
+    message: 'The total amount of the envelope could not be released'
   },
   FAILED_ENVELOPE_CREATION: {
     code: 'envelope-9',
-    message: "We had an issue creating the savings envelope"
+    message: 'We had an issue creating the savings envelope'
+  },
+  INVALID_AMOUNT: {
+    code: 'envelope-10',
+    message: 'The initial envelope amount must be greater than zero.'
   }
 }
 

@@ -36,7 +36,7 @@ const errors = {
     message: 'We had an issue creating the savings envelope'
   },
   INVALID_AMOUNT: {
-    code: 'envelope-9',
+    code: 'envelope-10',
     message: 'The initial envelope amount must be greater than zero.'
   }
 }

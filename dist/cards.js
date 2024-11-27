@@ -34,7 +34,7 @@ const errors = {
   },
   FAILED_FETCHING_CARD_SENSITIVE_INFO: {
     code: 'cards-9',
-    meessage: 'Failed to fetch card sensitive information.'
+    message: 'Failed to fetch card sensitive information.'
   }
 };
 

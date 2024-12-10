@@ -136,6 +136,10 @@ const errors = {
     code: 'general-28',
     message: 'Service connection error'
   },
+  UNSUPPORTED_APP_VERSION: {
+    code: 'general-29',
+    message: 'App version not supported'
+  },
   ROUTE_NOT_FOUND: {
     message: 'Actualiza la APP para que podas continuar con tu experiencia Wink',
     code: 'Actualiza la APP para que podas continuar con tu experiencia Wink',

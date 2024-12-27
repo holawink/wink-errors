@@ -40,7 +40,7 @@ const errors = {
     code: 'sendMoney-10',
     message: 'It was not possible to register the transaction because is a self transaction'
   },
-  SINPE_MOVIL_DAYLI_LIMIT_EXCEEDED: {
+  SINPE_MOVIL_DAILY_LIMIT_EXCEEDED: {
     code: 'sendMoney-11',
     message: 'The amount exceeds the daily sinpe movil limit'
   }

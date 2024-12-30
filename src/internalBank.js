@@ -160,6 +160,11 @@ const internalErrors = {
   CLOSED_CLIENT_ACCOUNT: {
     code: 'external-39',
     message: "Destination customer's account is closed"
+  },
+  DAILY_LIMIT_EXCEEDED: {
+    code: 'external-40',
+    message:
+      'The maximum daily accumulated limit for sending SINPE transfers has been exceeded'
   }
 }
 

@@ -257,9 +257,13 @@ const externalErrors = {
     description: 'No se encontraron pagos pendientes.',
     error: internalErrors.NOT_PENDING_INVOICES
   },
-  '9003': {
+  '9000': {
     description:
-      'Cuenta del cliente destino cerrada',
+      'Se superó el monto acumulado máximo diario permitido para envío de transferencias SINPE.',
+    error: internalErrors.DAILY_LIMIT_EXCEEDED
+  },
+  '9003': {
+    description: 'Cuenta del cliente destino cerrada',
     error: internalErrors.CLOSED_CLIENT_ACCOUNT
   },
   '9006': {

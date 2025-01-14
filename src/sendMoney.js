@@ -48,6 +48,10 @@ const errors = {
   LOW_AMOUNT_FOR_CONVERSION: {
     code: 'sendMoney-12',
     message: 'The amount is too low for conversion'
+  },
+  MONTHLY_TRANSACTION_LIMIT_EXCEEDED: {
+    code: 'sendMoney-13',
+    message: 'The amount exceeds the monthly transactional limit'
   }
 }
 

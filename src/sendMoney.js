@@ -38,11 +38,16 @@ const errors = {
   },
   SELF_TRANSFER_NOT_ALLOWED: {
     code: 'sendMoney-10',
-    message: 'It was not possible to register the transaction because is a self transaction'
+    message:
+      'It was not possible to register the transaction because is a self transaction'
   },
   SINPE_MOVIL_DAILY_LIMIT_EXCEEDED: {
     code: 'sendMoney-11',
     message: 'The amount exceeds the daily sinpe movil limit'
+  },
+  LOW_AMOUNT_FOR_CONVERSION: {
+    code: 'sendMoney-12',
+    message: 'The amount is too low for conversion'
   }
 }
 

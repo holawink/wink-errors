@@ -47,6 +47,10 @@ const errors = {
   SINPE_MOVIL_DAILY_LIMIT_EXCEEDED: {
     code: 'sendMoney-11',
     message: 'The amount exceeds the daily sinpe movil limit'
+  },
+  LOW_AMOUNT_FOR_CONVERSION: {
+    code: 'sendMoney-12',
+    message: 'The amount is too low for conversion'
   }
 };
 

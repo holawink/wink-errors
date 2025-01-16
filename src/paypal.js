@@ -60,6 +60,11 @@ const errors = {
     code: 'paypal-15',
     message:
       'The withdrawal amount from PayPal is insufficient to cover the transfer fee.'
+  },
+  PAYMENT_DENIED_UNSUPPORTED_COUNTRY: {
+    code: 'paypal-16',
+    message:
+      'The country associated with your account does not support this type of transaction or withdrawal.'
   }
 }
 

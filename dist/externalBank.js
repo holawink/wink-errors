@@ -305,7 +305,7 @@ const externalErrors = {
   },
   '9028': {
     description: 'Problemas de comunicación con el Sistema Nacional de Pagos para procesar su consulta o transacción.',
-    error: _internalBank2.default.UNEXPECTED_ERROR
+    error: _sendMoney2.default.NATIONAL_PAYMENT_SYSTEM_COMMUNICATION_ERROR
   },
   '9029': {
     description: 'La Entidad Financiera destino de la transferencia no puede procesar su transacción',

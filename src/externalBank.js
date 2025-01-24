@@ -313,7 +313,7 @@ const externalErrors = {
   '9028': {
     description:
       'Problemas de comunicación con el Sistema Nacional de Pagos para procesar su consulta o transacción.',
-    error: internalErrors.UNEXPECTED_ERROR
+    error: sendMoneyErrors.NATIONAL_PAYMENT_SYSTEM_COMMUNICATION_ERROR
   },
   '9029': {
     description:

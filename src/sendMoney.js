@@ -48,6 +48,11 @@ const errors = {
   LOW_AMOUNT_FOR_CONVERSION: {
     code: 'sendMoney-12',
     message: 'The amount is too low for conversion'
+  },
+  NATIONAL_PAYMENT_SYSTEM_COMMUNICATION_ERROR: {
+    code: 'sendMoney-13',
+    message:
+      'Issues with communication to the National Payment System to process your query or transaction'
   }
 }
 

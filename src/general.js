@@ -143,6 +143,10 @@ const errors = {
     code: 'Actualiza la APP para que podas continuar con tu experiencia Wink',
     description: 'Route or resource not found',
     httpStatus: 404
+  },
+  OPERATION_FRAUD_VERIFICATION_REJECTED: {
+    code: 'general-30',
+    message: 'Operation rejected'
   }
 }
 

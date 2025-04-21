@@ -163,7 +163,11 @@ const errors = {
   MAX_SEND_ATTEMPTS_REACHED: {
     code: 'security-41',
     message: 'Max send attempts reached'
-  }
+  },
+    MAX_LOGIN_ATTEMPS_REACHED: {
+    code: 'security-42',
+    message: 'Maximum number of login attemps reached'
+  },
 }
 
 export default errors

@@ -10,7 +10,7 @@ const errors = {
   },
   INACTIVE_ACCOUNT: {
     code: 'account-3',
-    message: 'Rhe account is inactive.'
+    message: 'The account is inactive.'
   },
 }
 

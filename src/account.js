@@ -7,7 +7,11 @@ const errors = {
     code: 'account-2',
     message:
       'The account status was successfully updated, but the card could not be linked to the account.'
-  }
+  },
+  INACTIVE_ACCOUNT: {
+    code: 'account-3',
+    message: 'Rhe account is inactive.'
+  },
 }
 
 export default errors

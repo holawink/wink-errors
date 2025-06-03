@@ -11,6 +11,10 @@ const errors = {
   CARD_LINK_FAILED_AFTER_ACCOUNT_STATUS_UPDATE: {
     code: 'account-2',
     message: 'The account status was successfully updated, but the card could not be linked to the account.'
+  },
+  INACTIVE_ACCOUNT: {
+    code: 'account-3',
+    message: 'The account is inactive.'
   }
 };
 
